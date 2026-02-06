@@ -15,13 +15,23 @@ python scripts/build_static.py
 This writes:
 - `docs/data/politicians.json`
 - `docs/data/profiles.json`
+- `docs/data/meta.json`
 
 These files are what the static site reads. Commit them to keep the site fully static.
+
+### Build the donor summary
+```bash
+python scripts/fetch_donors_aec.py
+```
+
+This writes:
+- `docs/data/donors.json`
 
 ## Automatic Updates (GitHub Actions)
 This repo includes a scheduled workflow that:
 - Fetches the current APH parliamentarian list
 - Rebuilds the static JSON data
+- Pulls AEC annual donor disclosures
 - Commits changes back to the repo
 
 Workflow file: `.github/workflows/update-data.yml`

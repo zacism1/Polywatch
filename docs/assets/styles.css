@@ -108,6 +108,12 @@ body {
   font-family: var(--font-display);
 }
 
+.freshness {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--accent-2);
+}
+
 .hero-card {
   background: linear-gradient(140deg, rgba(247, 178, 103, 0.15), rgba(123, 223, 242, 0.1));
   border-radius: var(--radius);
@@ -223,10 +229,73 @@ input, select {
   letter-spacing: 0.5px;
 }
 
+.featured-pill {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(247, 178, 103, 0.2);
+  color: var(--accent);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
 .card a {
   color: var(--accent);
   text-decoration: none;
   font-weight: 600;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card {
+  min-height: 240px;
+}
+
+.donors {
+  margin-top: 2rem;
+}
+
+.donor-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.donor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.donor-card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 1rem;
+  border: 1px solid var(--border);
+}
+
+.donor-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--accent);
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.donor-charts {
+  margin-top: 1.5rem;
 }
 
 .profile-hero {

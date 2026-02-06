@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="noise"></div>
@@ -41,6 +42,7 @@
             <span class="metric-value" id="metricSenate">—</span>
           </div>
         </div>
+        <p class="freshness" id="dataFreshness">Last refresh: —</p>
       </div>
       <div class="hero-card">
         <p class="card-label">Featured Watchlist</p>
@@ -51,6 +53,17 @@
   </header>
 
   <main class="container">
+    <section class="charts">
+      <div class="panel chart-card">
+        <h3>Chamber split</h3>
+        <canvas id="chamberChart"></canvas>
+      </div>
+      <div class="panel chart-card">
+        <h3>Party distribution</h3>
+        <canvas id="partyChart"></canvas>
+      </div>
+    </section>
+
     <section class="search-panel">
       <div>
         <h2>Search the directory</h2>
@@ -76,6 +89,30 @@
       </div>
       <div id="cardGrid" class="card-grid"></div>
     </section>
+
+    <section class="panel donors">
+      <div class="donor-header">
+        <div>
+          <h2>Major disclosed donors by party</h2>
+          <p class="muted">
+            Based on AEC Transparency Register annual disclosures. Figures reflect totals above the public disclosure threshold.
+          </p>
+        </div>
+        <div class="donor-controls">
+          <select id="donorPartySelect">
+            <option value="">Select a party</option>
+          </select>
+        </div>
+      </div>
+      <div class="donor-charts">
+        <div class="panel chart-card">
+          <h3>Donations over time</h3>
+          <canvas id="donorTrendChart"></canvas>
+        </div>
+      </div>
+      <div id="donorList" class="donor-list"></div>
+      <p class="muted" id="donorMeta"></p>
+    </section>
   </main>
 
   <footer class="footer">
@@ -84,7 +121,7 @@
       corruption, or any accusations. Data may contain errors; verify independently. Complies with fair dealing under
       Australian copyright law.
     </p>
-    <p class="muted">Sources: aph.gov.au and public market data APIs.</p>
+    <p class="muted">Sources: aph.gov.au and AEC Transparency Register.</p>
   </footer>
 
   <script src="assets/app.js"></script>

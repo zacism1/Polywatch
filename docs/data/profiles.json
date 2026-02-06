@@ -1,28 +1,1130 @@
 {
-  "sample-mp": {
-    "investments": [
-      {
-        "asset": "Sample Mining Co (ASX: SMC)",
-        "date": "2024-05-12",
-        "source": "APH Register"
-      }
-    ],
-    "policies": [
-      {
-        "title": "Mining reform bill",
-        "date": "2024-06-01",
-        "source": "Hansard"
-      }
-    ],
-    "correlations": [
-      {
-        "policy": "Mining reform bill",
-        "asset": "Sample Mining Co (ASX: SMC)",
-        "details": "Price gain 18% within 30 days of policy event"
-      }
-    ]
+  "mr-basem-abdo-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
   },
-  "sample-senator": {
+  "hon-anthony-albanese-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-mary-aldred-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-penny-allman-payne": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-dr-anne-aly-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-ash-ambihaipahar-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-michelle-ananda-rajah": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-alex-antic": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-wendy-askew": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-tim-ayres": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-ralph-babet": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-david-batt-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-angie-bell-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-sean-bell": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-jodie-belyea-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-carol-berry-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-sam-birrell-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-leah-blyth": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-nicolette-boele-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-chris-bowen-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-colin-boyce-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-andrew-bragg": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-jo-briskey-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-slade-brockman": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-carol-brown": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-scott-buchholz-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-tony-burke-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-matt-burnell-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-josh-burns-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-mark-butler-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-alison-byrnes-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-ross-cadell": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-cameron-caldwell-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-julie-ann-campbell-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-matthew-canavan": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-michaelia-cash": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-jamie-chaffey-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-dr-jim-chalmers-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-claire-chandler": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-kate-chaney-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-dr-andrew-charlton-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-darren-chester-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-lisa-chesters-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-anthony-chisholm": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-raff-ciccone": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-jason-clare-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-sharon-claydon-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-claire-clutterham-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-renee-coffey-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-libby-coker-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-richard-colbeck": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-jessica-collins": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-julie-collins-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-emma-comer-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-pat-conaghan-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-pat-conroy-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-kara-cook-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-trish-cook-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-dorinda-cox": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-lisa-darmanin": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-milton-dick-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-josh-dolega": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-richard-dowling": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-mary-doyle-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-mark-dreyfus-kc-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-jonathon-duniam": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-justine-elliot-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-don-farrell": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-mehreen-faruqi": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-cassandra-fernando-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-ali-france-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "dr-mike-freelander-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-tom-french-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-katy-gallagher": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "dr-carina-garland-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-andrew-gee-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-steve-georganas-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-varun-ghosh": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-andrew-giles-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-patrick-gorman-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-luke-gosling-oam-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-nita-green": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-matt-gregg-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-karen-grogan": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "dr-helen-haines-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-garth-hamilton-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-pauline-hanson": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-sarah-hanson-young": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-andrew-hastie-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-alex-hawke-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-sarah-henderson": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-julian-hill-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-steph-hodgins-may": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-kevin-hogan-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-rowan-holzberger-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-jane-hume": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-ed-husic-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-madonna-jarrett-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-alice-jordan-baird-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-barnaby-joyce-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-bob-katter-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-ged-kearney-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-simon-kennedy-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-matt-keogh-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-peter-khalil-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-catherine-king-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-madeleine-king-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-maria-kovacic": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-jacqui-lambie": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-michelle-landry-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-tania-lawrence-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-jerome-laxale-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-dai-le-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-julian-leeser-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-dr-andrew-leigh-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-sussan-ley-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-kerrynne-liddle": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-sam-lim-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-sue-lines": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-david-littleproud-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-richard-marles-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-zaneta-mascarenhas-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-jenny-mcallister": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-kristy-mcbain-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-emma-mcbride-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-malarndirri-mccarthy": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-michael-mccormack-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-susan-mcdonald": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-james-mcgrath": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mrs-melissa-mcintosh-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-bridget-mckenzie": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-zoe-mckenzie-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-nick-mckim": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-andrew-mclachlan-csc": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-louise-miller-frost-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-rob-mitchell-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-david-moncrieff-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-corinne-mulholland": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-dr-daniel-mulino-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-jacinta-nampijinpa-price": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-shayne-neumann-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-gabriel-ng-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-ted-obrien-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-llew-obrien-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-clare-oneil-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-deborah-oneill": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-matt-osullivan": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-tony-pasin-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-james-paterson": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-fatima-payman": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-alicia-payne-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-alison-penfold-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mrs-fiona-phillips-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-henry-pike-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-tanya-plibersek-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-barbara-pocock": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-david-pocock": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-helen-polley": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-melissa-price-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-sam-rae-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-leon-rebello-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "dr-gordon-reid-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-dan-repacholi-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-amanda-rishworth-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-malcolm-roberts": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-tracey-roberts-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-michelle-rowland-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-anne-ruston": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-joanne-ryan-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "dr-monique-ryan-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "dr-sophie-scamps-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-paul-scarr": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-marion-scrymgour-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-rebekha-sharkie-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-dave-sharma": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-tony-sheldon": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-david-shoebridge": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-sally-sitou-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-ben-small-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-david-smith-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-dean-smith": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-marielle-smith": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-matt-smith-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-zhi-soon-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-allegra-spender-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-anne-stanley-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-jordon-steele-john": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-zali-steggall-oam-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-glenn-sterle": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-jana-stewart": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-meryl-swanson-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-angus-taylor-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-jess-teesdale-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-dan-tehan-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-susan-templeman-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-matt-thistlethwaite-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-phillip-thompson-oam-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-lidia-thorpe": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-kate-thwaites-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-tammy-tyrrell": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-anne-urquhart-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-tom-venning-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-aaron-violi-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-charlotte-walker": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-andrew-wallace-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-jess-walsh": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-larissa-waters": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-elizabeth-watson-brown-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-murray-watt": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-tim-watts-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "dr-anne-webster-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-anika-wells-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-peter-whish-wilson": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-rebecca-white-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-ellie-whiteaker": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-tyron-whitten": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-andrew-wilkie-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-andrew-willcox-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-josh-wilson-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-rick-wilson-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-tim-wilson-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "ms-sarah-witty-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "senator-the-hon-penny-wong": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "hon-jason-wood-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-terry-young-mp": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  },
+  "mr-tony-zappia-mp": {
     "investments": [],
     "policies": [],
     "correlations": []

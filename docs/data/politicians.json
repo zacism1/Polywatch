@@ -1,18 +1,1810 @@
 [
   {
-    "id": "sample-mp",
-    "name": "Sample MP",
-    "party": "Sample Party",
-    "electorate": "Sample Electorate",
+    "id": "mr-basem-abdo-mp",
+    "name": "Mr Basem Abdo MP",
+    "party": "Australian Labor Party",
+    "electorate": "Calwell, Victoria",
     "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-anthony-albanese-mp",
+    "name": "Hon Anthony Albanese MP",
+    "party": "Australian Labor Party",
+    "electorate": "Grayndler, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-mary-aldred-mp",
+    "name": "Ms Mary Aldred MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Monash, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-penny-allman-payne",
+    "name": "Senator Penny Allman-Payne",
+    "party": "Australian Greens",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-dr-anne-aly-mp",
+    "name": "Hon Dr Anne Aly MP",
+    "party": "Australian Labor Party",
+    "electorate": "Cowan, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-ash-ambihaipahar-mp",
+    "name": "Ms Ash Ambihaipahar MP",
+    "party": "Australian Labor Party",
+    "electorate": "Barton, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-michelle-ananda-rajah",
+    "name": "Senator Michelle Ananda-Rajah",
+    "party": "Australian Labor Party",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-alex-antic",
+    "name": "Senator Alex Antic",
+    "party": "Liberal Party of Australia",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-wendy-askew",
+    "name": "Senator Wendy Askew",
+    "party": "Liberal Party of Australia",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
     "featured": true
   },
   {
-    "id": "sample-senator",
-    "name": "Sample Senator",
-    "party": "Sample Party",
-    "electorate": "Sample State",
+    "id": "senator-the-hon-tim-ayres",
+    "name": "Senator the Hon Tim Ayres",
+    "party": "Australian Labor Party",
+    "electorate": "New South Wales",
     "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-ralph-babet",
+    "name": "Senator Ralph Babet",
+    "party": "United Australia Party",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "mr-david-batt-mp",
+    "name": "Mr David Batt MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Hinkler, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-angie-bell-mp",
+    "name": "Ms Angie Bell MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Moncrieff, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-sean-bell",
+    "name": "Senator Sean Bell",
+    "party": "One Nation",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-jodie-belyea-mp",
+    "name": "Ms Jodie Belyea MP",
+    "party": "Australian Labor Party",
+    "electorate": "Dunkley, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-carol-berry-mp",
+    "name": "Ms Carol Berry MP",
+    "party": "Australian Labor Party",
+    "electorate": "Whitlam, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-sam-birrell-mp",
+    "name": "Mr Sam Birrell MP",
+    "party": "The Nationals",
+    "electorate": "Nicholls, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-leah-blyth",
+    "name": "Senator Leah Blyth",
+    "party": "Liberal Party of Australia",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-nicolette-boele-mp",
+    "name": "Ms Nicolette Boele MP",
+    "party": "Independent",
+    "electorate": "Bradfield, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-chris-bowen-mp",
+    "name": "Hon Chris Bowen MP",
+    "party": "Australian Labor Party",
+    "electorate": "McMahon, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-colin-boyce-mp",
+    "name": "Mr Colin Boyce MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Flynn, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-andrew-bragg",
+    "name": "Senator Andrew Bragg",
+    "party": "Liberal Party of Australia",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-jo-briskey-mp",
+    "name": "Ms Jo Briskey MP",
+    "party": "Australian Labor Party",
+    "electorate": "Maribyrnong, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-slade-brockman",
+    "name": "Senator Slade Brockman",
+    "party": "Liberal Party of Australia",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-carol-brown",
+    "name": "Senator the Hon Carol Brown",
+    "party": "Australian Labor Party",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-scott-buchholz-mp",
+    "name": "Hon Scott Buchholz MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Wright, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-tony-burke-mp",
+    "name": "Hon Tony Burke MP",
+    "party": "",
+    "electorate": "Watson, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-matt-burnell-mp",
+    "name": "Mr Matt Burnell MP",
+    "party": "Australian Labor Party",
+    "electorate": "Spence, South Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-josh-burns-mp",
+    "name": "Mr Josh Burns MP",
+    "party": "Australian Labor Party",
+    "electorate": "Macnamara, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-mark-butler-mp",
+    "name": "Hon Mark Butler MP",
+    "party": "Australian Labor Party",
+    "electorate": "Hindmarsh, South Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-alison-byrnes-mp",
+    "name": "Ms Alison Byrnes MP",
+    "party": "Australian Labor Party",
+    "electorate": "Cunningham, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-ross-cadell",
+    "name": "Senator Ross Cadell",
+    "party": "The Nationals",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "mr-cameron-caldwell-mp",
+    "name": "Mr Cameron Caldwell MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Fadden, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-julie-ann-campbell-mp",
+    "name": "Ms Julie-Ann Campbell MP",
+    "party": "Australian Labor Party",
+    "electorate": "Moreton, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-matthew-canavan",
+    "name": "Senator the Hon Matthew Canavan",
+    "party": "The Nationals",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-michaelia-cash",
+    "name": "Senator the Hon Michaelia Cash",
+    "party": "Liberal Party of Australia",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": true
+  },
+  {
+    "id": "mr-jamie-chaffey-mp",
+    "name": "Mr Jamie Chaffey MP",
+    "party": "The Nationals",
+    "electorate": "Parkes, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-dr-jim-chalmers-mp",
+    "name": "Hon Dr Jim Chalmers MP",
+    "party": "Australian Labor Party",
+    "electorate": "Rankin, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-claire-chandler",
+    "name": "Senator Claire Chandler",
+    "party": "Liberal Party of Australia",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-kate-chaney-mp",
+    "name": "Ms Kate Chaney MP",
+    "party": "Independent",
+    "electorate": "Curtin, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-dr-andrew-charlton-mp",
+    "name": "Hon Dr Andrew Charlton MP",
+    "party": "Australian Labor Party",
+    "electorate": "Parramatta, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-darren-chester-mp",
+    "name": "Hon Darren Chester MP",
+    "party": "The Nationals",
+    "electorate": "Gippsland, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-lisa-chesters-mp",
+    "name": "Ms Lisa Chesters MP",
+    "party": "Australian Labor Party",
+    "electorate": "Bendigo, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-anthony-chisholm",
+    "name": "Senator the Hon Anthony Chisholm",
+    "party": "",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-raff-ciccone",
+    "name": "Senator Raff Ciccone",
+    "party": "",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-jason-clare-mp",
+    "name": "Hon Jason Clare MP",
+    "party": "Australian Labor Party",
+    "electorate": "Blaxland, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-sharon-claydon-mp",
+    "name": "Ms Sharon Claydon MP",
+    "party": "Australian Labor Party",
+    "electorate": "Newcastle, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-claire-clutterham-mp",
+    "name": "Ms Claire Clutterham MP",
+    "party": "Australian Labor Party",
+    "electorate": "Sturt, South Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-renee-coffey-mp",
+    "name": "Ms Renee Coffey MP",
+    "party": "Australian Labor Party",
+    "electorate": "Griffith, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-libby-coker-mp",
+    "name": "Ms Libby Coker MP",
+    "party": "Australian Labor Party",
+    "electorate": "Corangamite, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-richard-colbeck",
+    "name": "Senator the Hon Richard Colbeck",
+    "party": "Liberal Party of Australia",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": true
+  },
+  {
+    "id": "senator-jessica-collins",
+    "name": "Senator Jessica Collins",
+    "party": "Liberal Party of Australia",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-julie-collins-mp",
+    "name": "Hon Julie Collins MP",
+    "party": "Australian Labor Party",
+    "electorate": "Franklin, Tasmania",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-emma-comer-mp",
+    "name": "Ms Emma Comer MP",
+    "party": "Australian Labor Party",
+    "electorate": "Petrie, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-pat-conaghan-mp",
+    "name": "Mr Pat Conaghan MP",
+    "party": "The Nationals",
+    "electorate": "Cowper, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-pat-conroy-mp",
+    "name": "Hon Pat Conroy MP",
+    "party": "Australian Labor Party",
+    "electorate": "Shortland, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-kara-cook-mp",
+    "name": "Ms Kara Cook MP",
+    "party": "Australian Labor Party",
+    "electorate": "Bonner, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-trish-cook-mp",
+    "name": "Ms Trish Cook MP",
+    "party": "Australian Labor Party",
+    "electorate": "Bullwinkel, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-dorinda-cox",
+    "name": "Senator Dorinda Cox",
+    "party": "Australian Labor Party",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-lisa-darmanin",
+    "name": "Senator Lisa Darmanin",
+    "party": "Australian Labor Party",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-milton-dick-mp",
+    "name": "Hon Milton Dick MP",
+    "party": "",
+    "electorate": "Oxley, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-josh-dolega",
+    "name": "Senator Josh Dolega",
+    "party": "Australian Labor Party",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-richard-dowling",
+    "name": "Senator Richard Dowling",
+    "party": "Australian Labor Party",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-mary-doyle-mp",
+    "name": "Ms Mary Doyle MP",
+    "party": "Australian Labor Party",
+    "electorate": "Aston, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-mark-dreyfus-kc-mp",
+    "name": "Hon Mark Dreyfus KC, MP",
+    "party": "Australian Labor Party",
+    "electorate": "Isaacs, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-jonathon-duniam",
+    "name": "Senator the Hon Jonathon Duniam",
+    "party": "Liberal Party of Australia",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": true
+  },
+  {
+    "id": "hon-justine-elliot-mp",
+    "name": "Hon Justine Elliot MP",
+    "party": "Australian Labor Party",
+    "electorate": "Richmond, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-don-farrell",
+    "name": "Senator the Hon Don Farrell",
+    "party": "Australian Labor Party",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-mehreen-faruqi",
+    "name": "Senator Mehreen Faruqi",
+    "party": "Australian Greens",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-cassandra-fernando-mp",
+    "name": "Ms Cassandra Fernando MP",
+    "party": "Australian Labor Party",
+    "electorate": "Holt, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-ali-france-mp",
+    "name": "Ms Ali France MP",
+    "party": "Australian Labor Party",
+    "electorate": "Dickson, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "dr-mike-freelander-mp",
+    "name": "Dr Mike Freelander MP",
+    "party": "Australian Labor Party",
+    "electorate": "Macarthur, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-tom-french-mp",
+    "name": "Mr Tom French MP",
+    "party": "Australian Labor Party",
+    "electorate": "Moore, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-katy-gallagher",
+    "name": "Senator the Hon Katy Gallagher",
+    "party": "",
+    "electorate": "Australian Capital Territory",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "dr-carina-garland-mp",
+    "name": "Dr Carina Garland MP",
+    "party": "Australian Labor Party",
+    "electorate": "Chisholm, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-andrew-gee-mp",
+    "name": "Hon Andrew Gee MP",
+    "party": "Independent",
+    "electorate": "Calare, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-steve-georganas-mp",
+    "name": "Mr Steve Georganas MP",
+    "party": "Australian Labor Party",
+    "electorate": "Adelaide, South Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-varun-ghosh",
+    "name": "Senator Varun Ghosh",
+    "party": "Australian Labor Party",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-andrew-giles-mp",
+    "name": "Hon Andrew Giles MP",
+    "party": "Australian Labor Party",
+    "electorate": "Scullin, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-patrick-gorman-mp",
+    "name": "Hon Patrick Gorman MP",
+    "party": "Australian Labor Party",
+    "electorate": "Perth, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-luke-gosling-oam-mp",
+    "name": "Mr Luke Gosling OAM, MP",
+    "party": "Australian Labor Party",
+    "electorate": "Solomon, Northern Territory",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-nita-green",
+    "name": "Senator the Hon Nita Green",
+    "party": "Australian Labor Party",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "mr-matt-gregg-mp",
+    "name": "Mr Matt Gregg MP",
+    "party": "Australian Labor Party",
+    "electorate": "Deakin, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-karen-grogan",
+    "name": "Senator Karen Grogan",
+    "party": "",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "dr-helen-haines-mp",
+    "name": "Dr Helen Haines MP",
+    "party": "Independent",
+    "electorate": "Indi, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-garth-hamilton-mp",
+    "name": "Mr Garth Hamilton MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Groom, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-pauline-hanson",
+    "name": "Senator Pauline Hanson",
+    "party": "One Nation",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-sarah-hanson-young",
+    "name": "Senator Sarah Hanson-Young",
+    "party": "Australian Greens",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-andrew-hastie-mp",
+    "name": "Hon Andrew Hastie MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Canning, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-alex-hawke-mp",
+    "name": "Hon Alex Hawke MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Mitchell, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-sarah-henderson",
+    "name": "Senator the Hon Sarah Henderson",
+    "party": "Liberal Party of Australia",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": true
+  },
+  {
+    "id": "hon-julian-hill-mp",
+    "name": "Hon Julian Hill MP",
+    "party": "Australian Labor Party",
+    "electorate": "Bruce, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-steph-hodgins-may",
+    "name": "Senator Steph Hodgins-May",
+    "party": "Australian Greens",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-kevin-hogan-mp",
+    "name": "Hon Kevin Hogan MP",
+    "party": "The Nationals",
+    "electorate": "Page, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-rowan-holzberger-mp",
+    "name": "Mr Rowan Holzberger MP",
+    "party": "Australian Labor Party",
+    "electorate": "Forde, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-jane-hume",
+    "name": "Senator the Hon Jane Hume",
+    "party": "Liberal Party of Australia",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-ed-husic-mp",
+    "name": "Hon Ed Husic MP",
+    "party": "Australian Labor Party",
+    "electorate": "Chifley, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-madonna-jarrett-mp",
+    "name": "Ms Madonna Jarrett MP",
+    "party": "Australian Labor Party",
+    "electorate": "Brisbane, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-alice-jordan-baird-mp",
+    "name": "Ms Alice Jordan-Baird MP",
+    "party": "Australian Labor Party",
+    "electorate": "Gorton, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-barnaby-joyce-mp",
+    "name": "Hon Barnaby Joyce MP",
+    "party": "One Nation",
+    "electorate": "New England, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-bob-katter-mp",
+    "name": "Hon Bob Katter MP",
+    "party": "Katter's Australian Party",
+    "electorate": "Kennedy, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-ged-kearney-mp",
+    "name": "Hon Ged Kearney MP",
+    "party": "Australian Labor Party",
+    "electorate": "Cooper, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-simon-kennedy-mp",
+    "name": "Mr Simon Kennedy MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Cook, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-matt-keogh-mp",
+    "name": "Hon Matt Keogh MP",
+    "party": "Australian Labor Party",
+    "electorate": "Burt, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-peter-khalil-mp",
+    "name": "Hon Peter Khalil MP",
+    "party": "Australian Labor Party",
+    "electorate": "Wills, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-catherine-king-mp",
+    "name": "Hon Catherine King MP",
+    "party": "Australian Labor Party",
+    "electorate": "Ballarat, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-madeleine-king-mp",
+    "name": "Hon Madeleine King MP",
+    "party": "Australian Labor Party",
+    "electorate": "Brand, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-maria-kovacic",
+    "name": "Senator Maria Kovacic",
+    "party": "Liberal Party of Australia",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-jacqui-lambie",
+    "name": "Senator Jacqui Lambie",
+    "party": "Jacqui Lambie Network",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-michelle-landry-mp",
+    "name": "Hon Michelle Landry MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Capricornia, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-tania-lawrence-mp",
+    "name": "Ms Tania Lawrence MP",
+    "party": "Australian Labor Party",
+    "electorate": "Hasluck, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-jerome-laxale-mp",
+    "name": "Mr Jerome Laxale MP",
+    "party": "Australian Labor Party",
+    "electorate": "Bennelong, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-dai-le-mp",
+    "name": "Ms Dai Le MP",
+    "party": "Independent",
+    "electorate": "Fowler, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-julian-leeser-mp",
+    "name": "Mr Julian Leeser MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Berowra, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-dr-andrew-leigh-mp",
+    "name": "Hon Dr Andrew Leigh MP",
+    "party": "Australian Labor Party",
+    "electorate": "Fenner, Australian Capital Territory",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-sussan-ley-mp",
+    "name": "Hon Sussan Ley MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Farrer, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-kerrynne-liddle",
+    "name": "Senator Kerrynne Liddle",
+    "party": "Liberal Party of Australia",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "mr-sam-lim-mp",
+    "name": "Mr Sam Lim MP",
+    "party": "Australian Labor Party",
+    "electorate": "Tangney, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-sue-lines",
+    "name": "Senator the Hon Sue Lines",
+    "party": "Australian Labor Party",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-david-littleproud-mp",
+    "name": "Hon David Littleproud MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Maranoa, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-richard-marles-mp",
+    "name": "Hon Richard Marles MP",
+    "party": "Australian Labor Party",
+    "electorate": "Corio, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-zaneta-mascarenhas-mp",
+    "name": "Ms Zaneta Mascarenhas MP",
+    "party": "Australian Labor Party",
+    "electorate": "Swan, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-jenny-mcallister",
+    "name": "Senator the Hon Jenny McAllister",
+    "party": "Australian Labor Party",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-kristy-mcbain-mp",
+    "name": "Hon Kristy McBain MP",
+    "party": "Australian Labor Party",
+    "electorate": "Eden-Monaro, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-emma-mcbride-mp",
+    "name": "Hon Emma McBride MP",
+    "party": "Australian Labor Party",
+    "electorate": "Dobell, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-malarndirri-mccarthy",
+    "name": "Senator the Hon Malarndirri McCarthy",
+    "party": "Australian Labor Party",
+    "electorate": "Northern Territory",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-michael-mccormack-mp",
+    "name": "Hon Michael McCormack MP",
+    "party": "The Nationals",
+    "electorate": "Riverina, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-susan-mcdonald",
+    "name": "Senator Susan McDonald",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-james-mcgrath",
+    "name": "Senator the Hon James McGrath",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "mrs-melissa-mcintosh-mp",
+    "name": "Mrs Melissa McIntosh MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Lindsay, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-bridget-mckenzie",
+    "name": "Senator the Hon Bridget McKenzie",
+    "party": "The Nationals",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-zoe-mckenzie-mp",
+    "name": "Ms Zoe McKenzie MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Flinders, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-nick-mckim",
+    "name": "Senator Nick McKim",
+    "party": "Australian Greens",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-andrew-mclachlan-csc",
+    "name": "Senator Andrew McLachlan CSC",
+    "party": "Liberal Party of Australia",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-louise-miller-frost-mp",
+    "name": "Ms Louise Miller-Frost MP",
+    "party": "Australian Labor Party",
+    "electorate": "Boothby, South Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-rob-mitchell-mp",
+    "name": "Mr Rob Mitchell MP",
+    "party": "Australian Labor Party",
+    "electorate": "McEwen, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-david-moncrieff-mp",
+    "name": "Mr David Moncrieff MP",
+    "party": "Australian Labor Party",
+    "electorate": "Hughes, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-corinne-mulholland",
+    "name": "Senator Corinne Mulholland",
+    "party": "Australian Labor Party",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-dr-daniel-mulino-mp",
+    "name": "Hon Dr Daniel Mulino MP",
+    "party": "Australian Labor Party",
+    "electorate": "Fraser, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-jacinta-nampijinpa-price",
+    "name": "Senator Jacinta Nampijinpa Price",
+    "party": "Country Liberal Party",
+    "electorate": "Northern Territory",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-shayne-neumann-mp",
+    "name": "Hon Shayne Neumann MP",
+    "party": "Australian Labor Party",
+    "electorate": "Blair, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-gabriel-ng-mp",
+    "name": "Mr Gabriel Ng MP",
+    "party": "Australian Labor Party",
+    "electorate": "Menzies, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-ted-obrien-mp",
+    "name": "Mr Ted O'Brien MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Fairfax, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-llew-obrien-mp",
+    "name": "Mr Llew O'Brien MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Wide Bay, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-clare-oneil-mp",
+    "name": "Hon Clare O'Neil MP",
+    "party": "Australian Labor Party",
+    "electorate": "Hotham, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-deborah-oneill",
+    "name": "Senator Deborah O'Neill",
+    "party": "Australian Labor Party",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-matt-osullivan",
+    "name": "Senator Matt O'Sullivan",
+    "party": "Liberal Party of Australia",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "mr-tony-pasin-mp",
+    "name": "Mr Tony Pasin MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Barker, South Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-james-paterson",
+    "name": "Senator James Paterson",
+    "party": "Liberal Party of Australia",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-fatima-payman",
+    "name": "Senator Fatima Payman",
+    "party": "Australia's Voice",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-alicia-payne-mp",
+    "name": "Ms Alicia Payne MP",
+    "party": "Australian Labor Party",
+    "electorate": "Canberra, Australian Capital Territory",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-alison-penfold-mp",
+    "name": "Ms Alison Penfold MP",
+    "party": "The Nationals",
+    "electorate": "Lyne, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mrs-fiona-phillips-mp",
+    "name": "Mrs Fiona Phillips MP",
+    "party": "Australian Labor Party",
+    "electorate": "Gilmore, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-henry-pike-mp",
+    "name": "Mr Henry Pike MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Bowman, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-tanya-plibersek-mp",
+    "name": "Hon Tanya Plibersek MP",
+    "party": "Australian Labor Party",
+    "electorate": "Sydney, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-barbara-pocock",
+    "name": "Senator Barbara Pocock",
+    "party": "Australian Greens",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-david-pocock",
+    "name": "Senator David Pocock",
+    "party": "Independent",
+    "electorate": "Australian Capital Territory",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-helen-polley",
+    "name": "Senator Helen Polley",
+    "party": "Australian Labor Party",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-melissa-price-mp",
+    "name": "Hon Melissa Price MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Durack, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-sam-rae-mp",
+    "name": "Hon Sam Rae MP",
+    "party": "Australian Labor Party",
+    "electorate": "Hawke, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-leon-rebello-mp",
+    "name": "Mr Leon Rebello MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "McPherson, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "dr-gordon-reid-mp",
+    "name": "Dr Gordon Reid MP",
+    "party": "Australian Labor Party",
+    "electorate": "Robertson, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-dan-repacholi-mp",
+    "name": "Mr Dan Repacholi MP",
+    "party": "Australian Labor Party",
+    "electorate": "Hunter, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-amanda-rishworth-mp",
+    "name": "Hon Amanda Rishworth MP",
+    "party": "Australian Labor Party",
+    "electorate": "Kingston, South Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-malcolm-roberts",
+    "name": "Senator Malcolm Roberts",
+    "party": "One Nation",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-tracey-roberts-mp",
+    "name": "Ms Tracey Roberts MP",
+    "party": "Australian Labor Party",
+    "electorate": "Pearce, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-michelle-rowland-mp",
+    "name": "Hon Michelle Rowland MP",
+    "party": "Australian Labor Party",
+    "electorate": "Greenway, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-anne-ruston",
+    "name": "Senator the Hon Anne Ruston",
+    "party": "Liberal Party of Australia",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-joanne-ryan-mp",
+    "name": "Ms Joanne Ryan MP",
+    "party": "Australian Labor Party",
+    "electorate": "Lalor, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "dr-monique-ryan-mp",
+    "name": "Dr Monique Ryan MP",
+    "party": "Independent",
+    "electorate": "Kooyong, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "dr-sophie-scamps-mp",
+    "name": "Dr Sophie Scamps MP",
+    "party": "Independent",
+    "electorate": "Mackellar, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-paul-scarr",
+    "name": "Senator Paul Scarr",
+    "party": "Liberal Party of Australia",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-marion-scrymgour-mp",
+    "name": "Ms Marion Scrymgour MP",
+    "party": "Australian Labor Party",
+    "electorate": "Lingiari, Northern Territory",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-rebekha-sharkie-mp",
+    "name": "Ms Rebekha Sharkie MP",
+    "party": "Centre Alliance",
+    "electorate": "Mayo, South Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-dave-sharma",
+    "name": "Senator Dave Sharma",
+    "party": "Liberal Party of Australia",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-tony-sheldon",
+    "name": "Senator Tony Sheldon",
+    "party": "Australian Labor Party",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-david-shoebridge",
+    "name": "Senator David Shoebridge",
+    "party": "Australian Greens",
+    "electorate": "New South Wales",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-sally-sitou-mp",
+    "name": "Ms Sally Sitou MP",
+    "party": "Australian Labor Party",
+    "electorate": "Reid, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-ben-small-mp",
+    "name": "Mr Ben Small MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Forrest, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-david-smith-mp",
+    "name": "Mr David Smith MP",
+    "party": "Australian Labor Party",
+    "electorate": "Bean, Australian Capital Territory",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-dean-smith",
+    "name": "Senator Dean Smith",
+    "party": "Liberal Party of Australia",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-marielle-smith",
+    "name": "Senator Marielle Smith",
+    "party": "Australian Labor Party",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "mr-matt-smith-mp",
+    "name": "Mr Matt Smith MP",
+    "party": "Australian Labor Party",
+    "electorate": "Leichhardt, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-zhi-soon-mp",
+    "name": "Mr Zhi Soon MP",
+    "party": "Australian Labor Party",
+    "electorate": "Banks, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-allegra-spender-mp",
+    "name": "Ms Allegra Spender MP",
+    "party": "Independent",
+    "electorate": "Wentworth, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-anne-stanley-mp",
+    "name": "Ms Anne Stanley MP",
+    "party": "Australian Labor Party",
+    "electorate": "Werriwa, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-jordon-steele-john",
+    "name": "Senator Jordon Steele-John",
+    "party": "Australian Greens",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-zali-steggall-oam-mp",
+    "name": "Ms Zali Steggall OAM, MP",
+    "party": "Independent",
+    "electorate": "Warringah, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-glenn-sterle",
+    "name": "Senator Glenn Sterle",
+    "party": "Australian Labor Party",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-jana-stewart",
+    "name": "Senator Jana Stewart",
+    "party": "Australian Labor Party",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-meryl-swanson-mp",
+    "name": "Ms Meryl Swanson MP",
+    "party": "Australian Labor Party",
+    "electorate": "Paterson, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-angus-taylor-mp",
+    "name": "Hon Angus Taylor MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Hume, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-jess-teesdale-mp",
+    "name": "Ms Jess Teesdale MP",
+    "party": "Australian Labor Party",
+    "electorate": "Bass, Tasmania",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-dan-tehan-mp",
+    "name": "Hon Dan Tehan MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Wannon, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-susan-templeman-mp",
+    "name": "Ms Susan Templeman MP",
+    "party": "Australian Labor Party",
+    "electorate": "Macquarie, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-matt-thistlethwaite-mp",
+    "name": "Hon Matt Thistlethwaite MP",
+    "party": "Australian Labor Party",
+    "electorate": "Kingsford Smith, New South Wales",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-phillip-thompson-oam-mp",
+    "name": "Mr Phillip Thompson OAM, MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Herbert, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-lidia-thorpe",
+    "name": "Senator Lidia Thorpe",
+    "party": "Independent",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-kate-thwaites-mp",
+    "name": "Hon Kate Thwaites MP",
+    "party": "Australian Labor Party",
+    "electorate": "Jagajaga, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-tammy-tyrrell",
+    "name": "Senator Tammy Tyrrell",
+    "party": "Independent",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-anne-urquhart-mp",
+    "name": "Ms Anne Urquhart MP",
+    "party": "Australian Labor Party",
+    "electorate": "Braddon, Tasmania",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-tom-venning-mp",
+    "name": "Mr Tom Venning MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Grey, South Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-aaron-violi-mp",
+    "name": "Mr Aaron Violi MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Casey, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-charlotte-walker",
+    "name": "Senator Charlotte Walker",
+    "party": "Australian Labor Party",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "mr-andrew-wallace-mp",
+    "name": "Mr Andrew Wallace MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Fisher, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-jess-walsh",
+    "name": "Senator the Hon Jess Walsh",
+    "party": "Australian Labor Party",
+    "electorate": "Victoria",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-larissa-waters",
+    "name": "Senator Larissa Waters",
+    "party": "Australian Greens",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "ms-elizabeth-watson-brown-mp",
+    "name": "Ms Elizabeth Watson-Brown MP",
+    "party": "Australian Greens",
+    "electorate": "Ryan, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-murray-watt",
+    "name": "Senator the Hon Murray Watt",
+    "party": "Australian Labor Party",
+    "electorate": "Queensland",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-tim-watts-mp",
+    "name": "Hon Tim Watts MP",
+    "party": "Australian Labor Party",
+    "electorate": "Gellibrand, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "dr-anne-webster-mp",
+    "name": "Dr Anne Webster MP",
+    "party": "The Nationals",
+    "electorate": "Mallee, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-anika-wells-mp",
+    "name": "Hon Anika Wells MP",
+    "party": "Australian Labor Party",
+    "electorate": "Lilley, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-peter-whish-wilson",
+    "name": "Senator Peter Whish-Wilson",
+    "party": "Australian Greens",
+    "electorate": "Tasmania",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-rebecca-white-mp",
+    "name": "Hon Rebecca White MP",
+    "party": "Australian Labor Party",
+    "electorate": "Lyons, Tasmania",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-ellie-whiteaker",
+    "name": "Senator Ellie Whiteaker",
+    "party": "Australian Labor Party",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "senator-tyron-whitten",
+    "name": "Senator Tyron Whitten",
+    "party": "One Nation",
+    "electorate": "Western Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "mr-andrew-wilkie-mp",
+    "name": "Mr Andrew Wilkie MP",
+    "party": "Independent",
+    "electorate": "Clark, Tasmania",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-andrew-willcox-mp",
+    "name": "Mr Andrew Willcox MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Dawson, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-josh-wilson-mp",
+    "name": "Hon Josh Wilson MP",
+    "party": "Australian Labor Party",
+    "electorate": "Fremantle, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-rick-wilson-mp",
+    "name": "Mr Rick Wilson MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "O'Connor, Western Australia",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "hon-tim-wilson-mp",
+    "name": "Hon Tim Wilson MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "Goldstein, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "ms-sarah-witty-mp",
+    "name": "Ms Sarah Witty MP",
+    "party": "Australian Labor Party",
+    "electorate": "Melbourne, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "senator-the-hon-penny-wong",
+    "name": "Senator the Hon Penny Wong",
+    "party": "Australian Labor Party",
+    "electorate": "South Australia",
+    "chamber": "Senate",
+    "featured": false
+  },
+  {
+    "id": "hon-jason-wood-mp",
+    "name": "Hon Jason Wood MP",
+    "party": "Liberal Party of Australia",
+    "electorate": "La Trobe, Victoria",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-terry-young-mp",
+    "name": "Mr Terry Young MP",
+    "party": "Liberal National Party of Queensland",
+    "electorate": "Longman, Queensland",
+    "chamber": "House",
+    "featured": false
+  },
+  {
+    "id": "mr-tony-zappia-mp",
+    "name": "Mr Tony Zappia MP",
+    "party": "Australian Labor Party",
+    "electorate": "Makin, South Australia",
+    "chamber": "House",
     "featured": false
   }
 ]

@@ -1,4 +1,6 @@
 {
-  "generated": "manual",
-  "notes": "Run scripts/build_static.py after updating data/politicians.csv to rebuild static data files."
+  "generated_at": "2026-02-06T11:30:13.913045Z",
+  "total": 226,
+  "house": 150,
+  "senate": 76
 }

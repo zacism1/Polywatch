@@ -1,15 +1,25 @@
 const state = {
   politicians: [],
   profiles: {},
+  meta: {},
+  donors: null,
 };
 
 async function loadData() {
-  const [polRes, profileRes] = await Promise.all([
+  const responses = await Promise.all([
     fetch('data/politicians.json'),
     fetch('data/profiles.json'),
+    fetch('data/meta.json'),
+    fetch('data/donors.json').catch(() => null),
   ]);
-  state.politicians = await polRes.json();
-  state.profiles = await profileRes.json();
+
+  state.politicians = await responses[0].json();
+  state.profiles = await responses[1].json();
+  state.meta = await responses[2].json();
+
+  if (responses[3]) {
+    state.donors = await responses[3].json();
+  }
 }
 
 function renderHome() {
@@ -23,6 +33,12 @@ function renderHome() {
   if (metricTotal) metricTotal.textContent = total || '—';
   if (metricHouse) metricHouse.textContent = house || '—';
   if (metricSenate) metricSenate.textContent = senate || '—';
+
+  const freshness = document.getElementById('dataFreshness');
+  if (freshness && state.meta.generated_at) {
+    const date = new Date(state.meta.generated_at);
+    freshness.textContent = `Last refresh: ${date.toLocaleDateString()}`;
+  }
 
   const parties = new Set(state.politicians.map((p) => p.party).filter(Boolean));
   const partyFilter = document.getElementById('partyFilter');
@@ -42,6 +58,10 @@ function renderHome() {
       .slice(0, 5);
 
     featuredList.innerHTML = '';
+    if (!featured.length) {
+      featuredList.innerHTML = '<li>No featured profiles yet.</li>';
+    }
+
     featured.forEach((p) => {
       const li = document.createElement('li');
       li.innerHTML = `<a href="profile.html?id=${p.id}">${p.name}</a><span>${p.party || 'Independent'}</span>`;
@@ -49,6 +69,58 @@ function renderHome() {
     });
   }
 
+  renderCharts(parties, house, senate);
+  renderCards(partyFilter);
+  renderDonors();
+}
+
+function renderCharts(parties, house, senate) {
+  const chamberCanvas = document.getElementById('chamberChart');
+  if (chamberCanvas) {
+    new Chart(chamberCanvas, {
+      type: 'doughnut',
+      data: {
+        labels: ['House', 'Senate'],
+        datasets: [{
+          data: [house, senate],
+          backgroundColor: ['#f7b267', '#7bdff2'],
+        }],
+      },
+      options: { plugins: { legend: { labels: { color: '#f2f2f2' } } } },
+    });
+  }
+
+  const partyCanvas = document.getElementById('partyChart');
+  if (partyCanvas) {
+    const counts = {};
+    state.politicians.forEach((p) => {
+      const party = p.party || 'Independent';
+      counts[party] = (counts[party] || 0) + 1;
+    });
+    const labels = Object.keys(counts).slice(0, 8);
+    const values = labels.map((label) => counts[label]);
+
+    new Chart(partyCanvas, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{
+          data: values,
+          backgroundColor: '#f7b267',
+        }],
+      },
+      options: {
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { color: '#f2f2f2' } },
+          y: { ticks: { color: '#f2f2f2' } },
+        },
+      },
+    });
+  }
+}
+
+function renderCards(partyFilter) {
   const cardGrid = document.getElementById('cardGrid');
   if (!cardGrid) return;
 
@@ -56,7 +128,7 @@ function renderHome() {
   const chamberFilter = document.getElementById('chamberFilter');
   const resultsCount = document.getElementById('resultsCount');
 
-  const renderCards = () => {
+  const renderList = () => {
     const term = (searchInput?.value || '').toLowerCase();
     const party = partyFilter?.value || '';
     const chamber = chamberFilter?.value || '';
@@ -75,7 +147,7 @@ function renderHome() {
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `
-        <h4>${p.name}</h4>
+        <h4>${p.name} ${p.featured ? '<span class="featured-pill">Featured</span>' : ''}</h4>
         <div class="tags">
           <span class="tag">${p.chamber}</span>
           <span class="tag">${p.party || 'Independent'}</span>
@@ -93,11 +165,129 @@ function renderHome() {
 
   [searchInput, partyFilter, chamberFilter].forEach((el) => {
     if (!el) return;
-    el.addEventListener('input', renderCards);
-    el.addEventListener('change', renderCards);
+    el.addEventListener('input', renderList);
+    el.addEventListener('change', renderList);
   });
 
-  renderCards();
+  renderList();
+}
+
+function renderDonors() {
+  if (!state.donors) return;
+  const select = document.getElementById('donorPartySelect');
+  const list = document.getElementById('donorList');
+  const meta = document.getElementById('donorMeta');
+  const trendCanvas = document.getElementById('donorTrendChart');
+
+  if (!select || !list) return;
+
+  select.innerHTML = '<option value="">Select a party</option>';
+  state.donors.parties.forEach((party) => {
+    const option = document.createElement('option');
+    option.value = party.party;
+    option.textContent = party.party;
+    select.appendChild(option);
+  });
+
+  let trendChart = null;
+
+  const renderList = () => {
+    const partyName = select.value;
+    const partyData = state.donors.parties.find((p) => p.party === partyName);
+    list.innerHTML = '';
+
+    if (!partyData || !partyData.top_donors.length) {
+      list.innerHTML = '<p class="muted">Select a party to see the top disclosed donors.</p>';
+      if (trendChart) {
+        trendChart.destroy();
+        trendChart = null;
+      }
+      return;
+    }
+
+    const donors = partyData.top_donors || [];
+    const initial = donors.slice(0, 5);
+    const extra = donors.slice(5);
+
+    initial.forEach((donor) => {
+      const card = document.createElement('div');
+      card.className = 'donor-card';
+      card.innerHTML = `
+        <h4>${donor.name}</h4>
+        <p class="muted">${formatCurrency(donor.amount)}</p>
+      `;
+      list.appendChild(card);
+    });
+
+    if (extra.length) {
+      const toggle = document.createElement('button');
+      toggle.className = 'donor-toggle';
+      toggle.textContent = 'Show more';
+      let expanded = false;
+
+      toggle.addEventListener('click', () => {
+        expanded = !expanded;
+        toggle.textContent = expanded ? 'Show less' : 'Show more';
+        list.querySelectorAll('.donor-extra').forEach((node) => node.remove());
+        if (expanded) {
+          extra.forEach((donor) => {
+            const card = document.createElement('div');
+            card.className = 'donor-card donor-extra';
+            card.innerHTML = `
+              <h4>${donor.name}</h4>
+              <p class="muted">${formatCurrency(donor.amount)}</p>
+            `;
+            list.appendChild(card);
+          });
+        }
+      });
+
+      list.appendChild(toggle);
+    }
+
+    if (trendCanvas) {
+      const years = (partyData.yearly_totals || []).map((item) => item.year);
+      const values = (partyData.yearly_totals || []).map((item) => item.amount);
+      if (trendChart) {
+        trendChart.destroy();
+      }
+      trendChart = new Chart(trendCanvas, {
+        type: 'line',
+        data: {
+          labels: years,
+          datasets: [{
+            data: values,
+            borderColor: '#7bdff2',
+            backgroundColor: 'rgba(123, 223, 242, 0.2)',
+            fill: true,
+          }],
+        },
+        options: {
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: '#f2f2f2' } },
+            y: { ticks: { color: '#f2f2f2' } },
+          },
+        },
+      });
+    }
+  };
+
+  select.addEventListener('change', renderList);
+  renderList();
+
+  if (meta) {
+    meta.textContent = `Source: ${state.donors.source} · Financial year: ${state.donors.financial_year}`;
+  }
+}
+
+function formatCurrency(value) {
+  if (value === null || value === undefined) return '—';
+  return new Intl.NumberFormat('en-AU', {
+    style: 'currency',
+    currency: 'AUD',
+    maximumFractionDigits: 0,
+  }).format(value);
 }
 
 function renderProfile() {
@@ -111,7 +301,7 @@ function renderProfile() {
   const summary = document.getElementById('profileSummary');
   if (summary) {
     summary.innerHTML = `
-      <h1>${data.name}</h1>
+      <h1>${data.name} ${data.featured ? '<span class="featured-pill">Featured</span>' : ''}</h1>
       <p class="muted">${data.party || 'Independent'} • ${data.electorate || ''}</p>
     `;
   }
