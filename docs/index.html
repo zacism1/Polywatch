@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Polywatch | Federal Politician Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">Polywatch</div>
+      <div class="nav-tags">
+        <span>Federal Parliament</span>
+        <span>Public Data</span>
+        <span>Transparency</span>
+      </div>
+    </nav>
+    <div class="hero-body">
+      <div>
+        <h1>Australia’s federal politician tracker.</h1>
+        <p class="lead">
+          Explore disclosures, votes, and flagged correlations between policies and investments.
+          Built from public records for transparency.
+        </p>
+        <div class="hero-metrics" id="heroMetrics">
+          <div>
+            <span class="metric-label">Politicians</span>
+            <span class="metric-value" id="metricTotal">—</span>
+          </div>
+          <div>
+            <span class="metric-label">House</span>
+            <span class="metric-value" id="metricHouse">—</span>
+          </div>
+          <div>
+            <span class="metric-label">Senate</span>
+            <span class="metric-value" id="metricSenate">—</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="card-label">Featured Watchlist</p>
+        <ul id="featuredList" class="featured"></ul>
+        <p class="card-footnote">Auto-selected based on notable correlations.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-panel">
+      <div>
+        <h2>Search the directory</h2>
+        <p class="muted">Browse by name, electorate, party, or chamber.</p>
+      </div>
+      <div class="filters">
+        <input id="searchInput" type="text" placeholder="Search by name or electorate" />
+        <select id="partyFilter">
+          <option value="">All parties</option>
+        </select>
+        <select id="chamberFilter">
+          <option value="">All chambers</option>
+          <option value="House">House</option>
+          <option value="Senate">Senate</option>
+        </select>
+      </div>
+    </section>
+
+    <section>
+      <div class="list-header">
+        <h3>All federal representatives</h3>
+        <span id="resultsCount" class="muted">—</span>
+      </div>
+      <div id="cardGrid" class="card-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      This tool analyzes public data from official sources for transparency purposes only. It does not imply wrongdoing,
+      corruption, or any accusations. Data may contain errors; verify independently. Complies with fair dealing under
+      Australian copyright law.
+    </p>
+    <p class="muted">Sources: aph.gov.au and public market data APIs.</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

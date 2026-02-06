@@ -1,0 +1,4 @@
+{
+  "generated": "manual",
+  "notes": "Run scripts/build_static.py after updating data/politicians.csv to rebuild static data files."
+}

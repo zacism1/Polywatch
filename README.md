@@ -1,16 +1,35 @@
-# PoliTracker AU
+# Polywatch
 
-A basic Australian federal politician tracker that scrapes public sources (APH Register of Members' Interests and Hansard), stores data in SQLite, and flags potential investment/policy correlations.
+A public, static website that helps explore Australian federal politicians, their disclosures, and possible policy-investment correlations using public records.
 
-## Features
-- Scrape disclosures from APH Register PDFs using PyPDF2.
-- Scrape Hansard pages for policy/vote references.
-- Weekly automated pipeline with APScheduler.
-- Simple correlation logic for potential gains.
-- Public-facing site with no login.
-- Prominent legal/ethical disclaimer on every page.
+## Static Site (GitHub Pages)
+The live site can be hosted for free using GitHub Pages from the `docs/` folder.
 
-## Quick Start
+### Build the data files
+Update `data/politicians.csv`, then generate the JSON used by the static site:
+
+```bash
+python scripts/build_static.py
+```
+
+This writes:
+- `docs/data/politicians.json`
+- `docs/data/profiles.json`
+
+These files are what the static site reads. Commit them to keep the site fully static.
+
+## Automatic Updates (GitHub Actions)
+This repo includes a scheduled workflow that:
+- Fetches the current APH parliamentarian list
+- Rebuilds the static JSON data
+- Commits changes back to the repo
+
+Workflow file: `.github/workflows/update-data.yml`
+
+You can also run it manually from the GitHub Actions tab.
+
+## Optional Scraper (Local)
+If you want to scrape live data and generate the CSV/JSON files automatically, you can still use the Flask app in `app/`.
 
 ```bash
 python -m venv .venv
@@ -21,44 +40,7 @@ export FLASK_APP=app.py
 flask init-db
 flask fetch-politicians
 flask seed-politicians
-flask run
 ```
 
-## Scheduled Jobs
-By default, the scheduler runs weekly in-process. You can disable it with:
-
-```bash
-export SCHEDULER_ENABLED=0
-```
-
-To run the pipeline manually:
-
-```bash
-flask run-scrape-once
-```
-
-## Data Sources
-- APH Register of Members' Interests (House and Senate)
-- APH Hansard
-- Free market data APIs (Yahoo Finance or Alpha Vantage)
-
-You can override the APH URLs and API key via environment variables:
-
-- `APH_REGISTER_HOUSE_PDF`
-- `APH_REGISTER_SENATE_PDF`
-- `APH_HANSARD_BASE`
-- `ALPHA_VANTAGE_API_KEY`
-
-## Deployment Notes
-- For Heroku, use `Procfile` and set environment variables.
-- For AWS, run `gunicorn wsgi:app` and a separate scheduler process if desired.
-- Logs are written to `logs/scrape.log`.
-
-## CSV Format for Politicians
-`data/politicians.csv` should include:
-
-```
-name,party,electorate,chamber,aph_id
-```
-
-Use `flask fetch-politicians` to download the current list of Members and Senators.
+## Disclaimer
+This tool analyzes public data from official sources for transparency purposes only. It does not imply wrongdoing, corruption, or any accusations. Data may contain errors; verify independently. Complies with fair dealing under Australian copyright law.

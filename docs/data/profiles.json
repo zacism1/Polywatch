@@ -1,0 +1,30 @@
+{
+  "sample-mp": {
+    "investments": [
+      {
+        "asset": "Sample Mining Co (ASX: SMC)",
+        "date": "2024-05-12",
+        "source": "APH Register"
+      }
+    ],
+    "policies": [
+      {
+        "title": "Mining reform bill",
+        "date": "2024-06-01",
+        "source": "Hansard"
+      }
+    ],
+    "correlations": [
+      {
+        "policy": "Mining reform bill",
+        "asset": "Sample Mining Co (ASX: SMC)",
+        "details": "Price gain 18% within 30 days of policy event"
+      }
+    ]
+  },
+  "sample-senator": {
+    "investments": [],
+    "policies": [],
+    "correlations": []
+  }
+}

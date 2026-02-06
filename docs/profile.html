@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile | Polywatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="profile-hero">
+    <nav class="nav">
+      <a href="index.html" class="logo">Polywatch</a>
+      <a href="index.html" class="back-link">Back to directory</a>
+    </nav>
+    <div class="profile-summary" id="profileSummary">
+      <h1>Loading…</h1>
+      <p class="muted"></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="summary-grid">
+      <div class="summary-card" id="summaryChamber"></div>
+      <div class="summary-card" id="summaryInvestments"></div>
+      <div class="summary-card" id="summaryPolicies"></div>
+      <div class="summary-card" id="summaryFlags"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Flagged correlations</h2>
+      <div id="correlationTable"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Declared investments</h2>
+      <div id="investmentTable"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Votes & statements</h2>
+      <div id="policyTable"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      This tool analyzes public data from official sources for transparency purposes only. It does not imply wrongdoing,
+      corruption, or any accusations. Data may contain errors; verify independently. Complies with fair dealing under
+      Australian copyright law.
+    </p>
+    <p class="muted">Sources: aph.gov.au and public market data APIs.</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

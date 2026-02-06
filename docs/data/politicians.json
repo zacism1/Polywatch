@@ -1,0 +1,18 @@
+[
+  {
+    "id": "sample-mp",
+    "name": "Sample MP",
+    "party": "Sample Party",
+    "electorate": "Sample Electorate",
+    "chamber": "House",
+    "featured": true
+  },
+  {
+    "id": "sample-senator",
+    "name": "Sample Senator",
+    "party": "Sample Party",
+    "electorate": "Sample State",
+    "chamber": "Senate",
+    "featured": false
+  }
+]
