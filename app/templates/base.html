@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PoliTracker AU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <span class="brand-kicker">Australian Parliament</span>
+        <h1>PoliTracker AU</h1>
+        <p>Tracking federal politicians, disclosures, and policy signals.</p>
+      </div>
+      <div class="header-card">
+        <p class="label">Transparency Focus</p>
+        <p class="big">Federal MPs & Senators</p>
+        <p class="muted">Updated by scheduled scrapes</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="disclaimer">
+        This tool analyzes public data from official sources for transparency purposes only.
+        It does not imply wrongdoing, corruption, or any accusations. Data may contain errors;
+        verify independently. Complies with fair dealing under Australian copyright law.
+      </p>
+      <p class="sources">Sources: aph.gov.au and public market data APIs.</p>
+    </div>
+  </footer>
+</body>
+</html>

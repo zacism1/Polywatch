@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="panel hero">
+  <div>
+    <h2>{{ politician.name }}</h2>
+    <p class="muted">{{ politician.party or 'Independent' }}{% if politician.electorate %} • {{ politician.electorate }}{% endif %}</p>
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-label">Chamber</span>
+        <span class="stat-value">{{ politician.chamber or 'Unknown' }}</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Investments</span>
+        <span class="stat-value">{{ investments|length }}</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Policies</span>
+        <span class="stat-value">{{ policies|length }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-card">
+    <p class="label">Sources</p>
+    <ul>
+      <li>APH Register PDFs</li>
+      <li>Hansard transcripts</li>
+      <li>Market price history</li>
+    </ul>
+  </div>
+</section>
+
+<section class="grid">
+  <div class="panel">
+    <h3>Declared Investments</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Asset</th>
+          <th>Date</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for inv in investments %}
+        <tr>
+          <td>{{ inv.company or inv.asset_type }}</td>
+          <td>{{ inv.date or 'Unknown' }}</td>
+          <td>{% if inv.source_url %}<a href="{{ inv.source_url }}">Link</a>{% else %}-{% endif %}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="3">No investment records yet.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel">
+    <h3>Policies & Votes</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Bill/Statement</th>
+          <th>Category</th>
+          <th>Date</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for policy in policies %}
+        <tr>
+          <td>{{ policy.bill_name }}</td>
+          <td>{{ policy.category }}</td>
+          <td>{{ policy.date or 'Unknown' }}</td>
+          <td>{% if policy.source_url %}<a href="{{ policy.source_url }}">Link</a>{% else %}-{% endif %}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="4">No policy records yet.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="panel">
+  <h3>Flagged Correlations</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Investment</th>
+        <th>Policy</th>
+        <th>Score</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for c in correlations %}
+      <tr>
+        <td>{{ c.investment.company or c.investment.asset_type }}</td>
+        <td>{{ c.policy.bill_name }}</td>
+        <td>{{ '%.2f'|format(c.suspicion_score or 0) }}</td>
+        <td>{{ c.details }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="4">No correlations flagged yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h3>Timeline (Investments vs Policies)</h3>
+  <canvas id="timelineChart"></canvas>
+</section>
+
+<script>
+  const investmentData = {{ investments | map(attribute='date') | list | tojson }};
+  const policyData = {{ policies | map(attribute='date') | list | tojson }};
+
+  const labels = investmentData.concat(policyData).filter(Boolean).sort();
+  const invCounts = labels.map(d => investmentData.filter(x => x === d).length);
+  const polCounts = labels.map(d => policyData.filter(x => x === d).length);
+
+  new Chart(document.getElementById('timelineChart'), {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: 'Investments',
+          data: invCounts,
+          borderColor: '#d04a3b',
+          backgroundColor: 'rgba(208, 74, 59, 0.2)'
+        },
+        {
+          label: 'Policies',
+          data: polCounts,
+          borderColor: '#2b5c8a',
+          backgroundColor: 'rgba(43, 92, 138, 0.2)'
+        }
+      ]
+    }
+  });
+</script>
+{% endblock %}

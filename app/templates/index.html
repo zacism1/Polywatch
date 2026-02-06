@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="panel hero">
+  <div>
+    <h2>Federal Politicians Directory</h2>
+    <p class="muted">Search the current 150 Members and 76 Senators.</p>
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-label">Total</span>
+        <span class="stat-value">{{ total_count }}</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">House</span>
+        <span class="stat-value">{{ house_count }}</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Senate</span>
+        <span class="stat-value">{{ senate_count }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-card">
+    <p class="label">Data Feeds</p>
+    <ul>
+      <li>Members' Interests Register (House)</li>
+      <li>Senators' Interests Register (Senate)</li>
+      <li>Hansard voting and statements</li>
+    </ul>
+  </div>
+</section>
+
+<section class="panel">
+  <div class="search-row">
+    <h3>Browse Politicians</h3>
+    <input id="search" class="search" type="text" placeholder="Search by name, party, electorate">
+  </div>
+  <ul id="politician-list" class="card-list">
+    {% for p in politicians %}
+      <li class="card" data-search="{{ p.name }} {{ p.party }} {{ p.electorate }}">
+        <div class="card-title">{{ p.name }}</div>
+        <div class="card-meta">
+          <span class="badge">{{ p.party or 'Independent' }}</span>
+          {% if p.electorate %}<span class="badge muted">{{ p.electorate }}</span>{% endif %}
+          {% if p.chamber %}<span class="badge outline">{{ p.chamber }}</span>{% endif %}
+        </div>
+        <a class="card-link" href="{{ url_for('main.politician_detail', pol_id=p.id) }}">View details</a>
+      </li>
+    {% else %}
+      <li class="card empty">No politicians loaded. Run the seed command.</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<script>
+  const input = document.getElementById('search');
+  const list = document.getElementById('politician-list');
+  input.addEventListener('input', () => {
+    const term = input.value.toLowerCase();
+    Array.from(list.children).forEach((li) => {
+      const text = li.getAttribute('data-search');
+      if (!text) return;
+      li.style.display = text.toLowerCase().includes(term) ? 'flex' : 'none';
+    });
+  });
+</script>
+{% endblock %}

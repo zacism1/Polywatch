@@ -1,0 +1,247 @@
+:root {
+  --bg: #f5efe6;
+  --text: #1c1c1c;
+  --accent: #d04a3b;
+  --secondary: #275c8f;
+  --panel: #ffffff;
+  --border: #e3d7cc;
+  --muted: #6b6b6b;
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  --font-display: "Fraunces", serif;
+  --font-body: "Rubik", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, #fff7ee 0%, #f5efe6 55%, #efe6da 100%);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+.container {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 3rem 0 2.5rem;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.brand h1 {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  margin: 0 0 0.4rem;
+}
+
+.brand-kicker {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  color: #f0c9a9;
+}
+
+.header-card {
+  background: #2c2c2c;
+  border-radius: 16px;
+  padding: 1.4rem;
+  box-shadow: var(--shadow);
+}
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.7rem;
+  color: #f0c9a9;
+}
+
+.big {
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+  font-weight: 600;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.6rem;
+  margin: 1.6rem 0;
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.hero-card {
+  background: #f8f2eb;
+  border-radius: 16px;
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  background: #f9f6f1;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: var(--font-display);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.search-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.search {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  background: #f2e3d6;
+  color: #4b2b1c;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.badge.outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.card-link {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  text-align: left;
+  padding: 0.6rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.93rem;
+}
+
+table tbody tr:nth-child(even) {
+  background: #faf6f0;
+}
+
+.site-footer {
+  background: #1f1f1f;
+  color: #eee;
+  padding: 1.6rem 0;
+  margin-top: 2rem;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.sources {
+  font-size: 0.85rem;
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 700px) {
+  .brand h1 {
+    font-size: 2rem;
+  }
+}
