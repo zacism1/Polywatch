@@ -40,6 +40,9 @@ def main():
     pol_map = {row["id"]: row["name"] for row in politicians}
 
     profiles = {}
+    for row in politicians:
+        pol_id = slugify(row["name"])
+        profiles[pol_id] = {"investments": [], "policies": [], "correlations": []}
 
     investments = conn.execute(
         "SELECT politician_id, asset_type, company, date, source_url FROM investments"
@@ -49,7 +52,6 @@ def main():
         if not name:
             continue
         pol_id = slugify(name)
-        profiles.setdefault(pol_id, {"investments": [], "policies": [], "correlations": []})
         profiles[pol_id]["investments"].append(
             {
                 "asset": row["company"] or row["asset_type"] or "",
@@ -66,7 +68,6 @@ def main():
         if not name:
             continue
         pol_id = slugify(name)
-        profiles.setdefault(pol_id, {"investments": [], "policies": [], "correlations": []})
         profiles[pol_id]["policies"].append(
             {
                 "title": row["bill_name"] or "",
@@ -89,7 +90,6 @@ def main():
         if not name:
             continue
         pol_id = slugify(name)
-        profiles.setdefault(pol_id, {"investments": [], "policies": [], "correlations": []})
         profiles[pol_id]["correlations"].append(
             {
                 "policy": row["bill_name"] or "",

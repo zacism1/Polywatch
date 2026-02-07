@@ -24,11 +24,11 @@ class Config:
     APH_REGISTER_URLS = {
         "house": os.environ.get(
             "APH_REGISTER_HOUSE_PDF",
-            "https://www.aph.gov.au/Parliamentary_Business/Committees/House/Standing_Committee_of_Members_Interests/Register",
+            "https://www.aph.gov.au/Senators_and_Members/Members/Register",
         ),
         "senate": os.environ.get(
             "APH_REGISTER_SENATE_PDF",
-            "https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Senators_Interests/Register",
+            "https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Senators_Interests/Tabled_volumes",
         ),
     }
 

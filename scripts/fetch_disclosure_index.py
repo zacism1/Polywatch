@@ -1,5 +1,6 @@
 import json
 import re
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
@@ -34,10 +35,17 @@ def slugify(name: str) -> str:
     )
 
 
-def fetch_html(url: str) -> str:
-    resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
-    resp.raise_for_status()
-    return resp.text
+def fetch_html(url: str, retries: int = 3, backoff: float = 1.5) -> str:
+    last_err = None
+    for attempt in range(1, retries + 1):
+        try:
+            resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
+            resp.raise_for_status()
+            return resp.text
+        except requests.RequestException as exc:
+            last_err = exc
+            time.sleep(backoff * attempt)
+    raise last_err
 
 
 def parse_house_disclosures() -> dict:
@@ -82,14 +90,27 @@ def parse_senate_disclosures() -> list:
 
 
 def main():
-    house = parse_house_disclosures()
-    senate = parse_senate_disclosures()
+    try:
+        house = parse_house_disclosures()
+    except requests.RequestException as exc:
+        print(f"Failed to fetch House register page: {exc}")
+        house = {}
+
+    try:
+        senate = parse_senate_disclosures()
+    except requests.RequestException as exc:
+        print(f"Failed to fetch Senate register page: {exc}")
+        senate = []
 
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "house": house,
         "senate": senate,
     }
+
+    if not house and not senate and OUT_DISCLOSURES.exists():
+        print("No disclosures fetched; keeping existing disclosures.json")
+        return
 
     OUT_DISCLOSURES.parent.mkdir(parents=True, exist_ok=True)
     with OUT_DISCLOSURES.open("w", encoding="utf-8") as f:

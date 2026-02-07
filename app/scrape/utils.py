@@ -19,7 +19,8 @@ def can_fetch(url: str, user_agent: str) -> bool:
         rp.read()
         return rp.can_fetch(user_agent, url)
     except Exception:
-        return False
+        logger.warning("robots.txt fetch failed for %s; proceeding cautiously", url)
+        return True
 
 
 def fetch_url(url: str, user_agent: str, timeout: int, retries: int, delay: float) -> Optional[bytes]:

@@ -212,10 +212,25 @@ def _resolve_register_pdfs(url: str, user_agent: str, timeout: int, retries: int
         href = link.get("href")
         if not href:
             continue
-        if ".pdf" in href.lower():
-            pdf_links.append(urljoin(url, href))
+        href_lower = href.lower()
+        if ".pdf" not in href_lower:
+            continue
+        full = urljoin(url, href)
+        if _is_register_pdf(full):
+            pdf_links.append(full)
 
     return pdf_links or [url]
+
+
+def _is_register_pdf(url: str) -> bool:
+    lower = url.lower()
+    if "explanatory" in lower or "resolution" in lower:
+        return False
+    if "_48p.pdf" in lower or "/register/48p/" in lower:
+        return True
+    if "senators_interests" in lower or "senators_interests" in lower:
+        return True
+    return False
 
 
 def _parse_comma_name(line: str, name_index):
@@ -225,7 +240,12 @@ def _parse_comma_name(line: str, name_index):
     if len(parts) < 2:
         return None
     last = parts[0]
-    first = parts[1].split()[0]
+    if not parts[1]:
+        return None
+    first_parts = parts[1].split()
+    if not first_parts:
+        return None
+    first = first_parts[0]
     candidate = f"{first} {last}"
     normalized = normalize_name(candidate)
     return name_index.get(normalized)
