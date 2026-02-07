@@ -27,6 +27,14 @@ python scripts/fetch_donors_aec.py
 This writes:
 - `docs/data/donors.json`
 
+### Build the disclosure index
+```bash
+python scripts/fetch_disclosure_index.py
+```
+
+This writes:
+- `docs/data/disclosures.json`
+
 ### Export profile data from the local database
 After running the scrape pipeline, export the SQLite data into the static JSON format:
 
@@ -44,6 +52,7 @@ This repo includes a scheduled workflow that:
 - Exports profiles for the static site
 - Rebuilds the static JSON data
 - Pulls AEC annual donor disclosures
+- Pulls APH disclosure document links
 - Commits changes back to the repo
 
 Workflow file: `.github/workflows/update-data.yml`

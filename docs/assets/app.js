@@ -3,6 +3,7 @@ const state = {
   profiles: {},
   meta: {},
   donors: null,
+  disclosures: null,
 };
 
 async function loadData() {
@@ -11,6 +12,7 @@ async function loadData() {
     fetch('data/profiles.json'),
     fetch('data/meta.json'),
     fetch('data/donors.json').catch(() => null),
+    fetch('data/disclosures.json').catch(() => null),
   ]);
 
   state.politicians = await responses[0].json();
@@ -19,6 +21,9 @@ async function loadData() {
 
   if (responses[3]) {
     state.donors = await responses[3].json();
+  }
+  if (responses[4]) {
+    state.disclosures = await responses[4].json();
   }
 }
 
@@ -290,6 +295,32 @@ function formatCurrency(value) {
   }).format(value);
 }
 
+function renderDisclosureLinks(data) {
+  const panel = document.getElementById('disclosurePanel');
+  const links = document.getElementById('disclosureLinks');
+  if (!panel || !links) return;
+
+  if (!state.disclosures) {
+    panel.style.display = 'none';
+    return;
+  }
+
+  links.innerHTML = '';
+  if (!data) {
+    links.innerHTML = '<p class="muted">No disclosure document available.</p>';
+    return;
+  }
+
+  if (data.house_url) {
+    links.innerHTML += `<a href="${data.house_url}" target="_blank">House Register PDF</a>`;
+  }
+  if (data.senate_urls && data.senate_urls.length) {
+    data.senate_urls.forEach((url, idx) => {
+      links.innerHTML += `<a href="${url}" target="_blank">Senate Register PDF ${idx + 1}</a>`;
+    });
+  }
+}
+
 function renderProfile() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get('id');
@@ -311,6 +342,9 @@ function renderProfile() {
   setSummaryCard('summaryPolicies', 'Policy signals', `${profile.policies?.length || 0}`);
   setSummaryCard('summaryFlags', 'Flags', `${profile.correlations?.length || 0}`);
 
+  const disclosureData = buildDisclosureData(data);
+  renderDisclosureLinks(disclosureData);
+
   renderTable('correlationTable', ['Policy', 'Asset', 'Signal'], profile.correlations || [], (row) => [
     row.policy || '—',
     row.asset || '—',
@@ -328,6 +362,23 @@ function renderProfile() {
     row.date || '—',
     row.source || '—',
   ]);
+}
+
+function buildDisclosureData(pol) {
+  if (!state.disclosures) return null;
+  const result = { house_url: null, senate_urls: [] };
+
+  if (pol.chamber === 'House') {
+    const last = pol.name.split(' ').slice(-1)[0].toLowerCase();
+    const entry = state.disclosures.house[last];
+    if (entry) {
+      result.house_url = entry.url;
+    }
+  } else if (pol.chamber === 'Senate') {
+    result.senate_urls = state.disclosures.senate.map((item) => item.url);
+  }
+
+  return result;
 }
 
 function setSummaryCard(id, label, value) {

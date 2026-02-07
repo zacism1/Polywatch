@@ -1,0 +1,606 @@
+{
+  "generated_at": "2026-02-07T01:52:05.418591Z",
+  "house": {
+    "abdo": {
+      "label": "Abdo",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Abdo_48P.pdf"
+    },
+    "albanese": {
+      "label": "Albanese",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Albanese_48P.pdf"
+    },
+    "aldred": {
+      "label": "Aldred",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Aldred_48P.pdf"
+    },
+    "aly": {
+      "label": "Aly",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Aly_48P.pdf"
+    },
+    "ambihaipahar": {
+      "label": "Ambihaipahar",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Ambihaipahar_48P.pdf"
+    },
+    "batt": {
+      "label": "Batt",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Batt_48P.pdf"
+    },
+    "bell": {
+      "label": "Bell",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Bell_48P.pdf"
+    },
+    "belyea": {
+      "label": "Belyea",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Belyea_48P.pdf"
+    },
+    "berry": {
+      "label": "Berry",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Berry_48P.pdf"
+    },
+    "birrell": {
+      "label": "Birrell",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Birrell_48P.pdf"
+    },
+    "boele": {
+      "label": "Boele",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Boele_48P.pdf"
+    },
+    "bowen": {
+      "label": "Bowen",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Bowen_48P.pdf"
+    },
+    "boyce": {
+      "label": "Boyce",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Boyce_48P.pdf"
+    },
+    "briskey": {
+      "label": "Briskey",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Briskey_48P.pdf"
+    },
+    "buchholz": {
+      "label": "Buchholz",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Buchholz_48P.pdf"
+    },
+    "burke": {
+      "label": "Burke",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Burke_48P.pdf"
+    },
+    "burnell": {
+      "label": "Burnell",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Burnell_48P.pdf"
+    },
+    "burns": {
+      "label": "Burns",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Burns_48P.pdf"
+    },
+    "butler": {
+      "label": "Butler",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Butler_48P.pdf"
+    },
+    "byrnes": {
+      "label": "Byrnes",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/AB/Byrnes_48P.pdf"
+    },
+    "caldwell": {
+      "label": "Caldwell",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Caldwell_48P.pdf"
+    },
+    "campbell": {
+      "label": "Campbell",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Campbell_48P.pdf"
+    },
+    "chaffey": {
+      "label": "Chaffey",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Chaffey_48P.pdf"
+    },
+    "chalmers": {
+      "label": "Chalmers",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Chalmers_48P.pdf"
+    },
+    "chaney": {
+      "label": "Chaney",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Chaney_48P.pdf"
+    },
+    "charlton": {
+      "label": "Charlton",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Charlton_48P.pdf"
+    },
+    "chesterd": {
+      "label": "Chesterd",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/ChesterD_48P.pdf"
+    },
+    "chestersl": {
+      "label": "Chestersl",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/ChestersL_48P.pdf"
+    },
+    "clare": {
+      "label": "Clare",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Clare_48P.pdf"
+    },
+    "claydon": {
+      "label": "Claydon",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Claydon_48P.pdf"
+    },
+    "clutterham": {
+      "label": "Clutterham",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Clutterham_48P.pdf"
+    },
+    "coffey": {
+      "label": "Coffey",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Coffey_48P.pdf"
+    },
+    "coker": {
+      "label": "Coker",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Coker_48P.pdf"
+    },
+    "collins": {
+      "label": "Collins",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Collins_48P.pdf"
+    },
+    "comer": {
+      "label": "Comer",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Comer_48P.pdf"
+    },
+    "conaghan": {
+      "label": "Conaghan",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Conaghan_48P.pdf"
+    },
+    "conroy": {
+      "label": "Conroy",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Conroy_48P.pdf"
+    },
+    "cookk": {
+      "label": "Cookk",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/CookK_48P.pdf"
+    },
+    "cookt": {
+      "label": "Cookt",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/CookT_48P.pdf"
+    },
+    "dick": {
+      "label": "Dick",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Dick_48P.pdf"
+    },
+    "doyle": {
+      "label": "Doyle",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Doyle_48P.pdf"
+    },
+    "mark dreyfus": {
+      "label": "Mark Dreyfus",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Mark_Dreyfus_48P.pdf"
+    },
+    "elliotm": {
+      "label": "Elliotm",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/ElliotM_48P.pdf"
+    },
+    "fernando": {
+      "label": "Fernando",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Fernando_48P.pdf"
+    },
+    "france": {
+      "label": "France",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/France_48P.pdf"
+    },
+    "french": {
+      "label": "French",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/French_48P.pdf"
+    },
+    "freelander": {
+      "label": "Freelander",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/CF/Freelander_48P.pdf"
+    },
+    "garland": {
+      "label": "Garland",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Garland_48P.pdf"
+    },
+    "gee": {
+      "label": "Gee",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Gee_48P.pdf"
+    },
+    "georganas": {
+      "label": "Georganas",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Georganas_48P.pdf"
+    },
+    "giles": {
+      "label": "Giles",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Giles_48P.pdf"
+    },
+    "gorman": {
+      "label": "Gorman",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Gorman_48P.pdf"
+    },
+    "gosling": {
+      "label": "Gosling",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Gosling_48P.pdf"
+    },
+    "gregg": {
+      "label": "Gregg",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Gregg_48P.pdf"
+    },
+    "haines": {
+      "label": "Haines",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Haines_48P.pdf"
+    },
+    "hamilton": {
+      "label": "Hamilton",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Hamilton_48P.pdf"
+    },
+    "hastie": {
+      "label": "Hastie",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Hastie_48P.pdf"
+    },
+    "hawke": {
+      "label": "Hawke",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Hawke_48P.pdf"
+    },
+    "hill": {
+      "label": "Hill",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Hill_48P.pdf"
+    },
+    "hogan": {
+      "label": "Hogan",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Hogan_48P.pdf"
+    },
+    "holzberger": {
+      "label": "Holzberger",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Holzberger_48P.pdf"
+    },
+    "husic": {
+      "label": "Husic",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Husic_48P.pdf"
+    },
+    "jarrett": {
+      "label": "Jarrett",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Jarrett_48P.pdf"
+    },
+    "jordan-baird": {
+      "label": "Jordan-Baird",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Jordan-Baird_48P.pdf"
+    },
+    "joyce": {
+      "label": "Joyce",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/GJ/Joyce_48P.pdf"
+    },
+    "katter": {
+      "label": "Katter",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Katter_48P.pdf"
+    },
+    "kearney": {
+      "label": "Kearney",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Kearney_48P.pdf"
+    },
+    "kennedy": {
+      "label": "Kennedy",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Kennedy_48P.pdf"
+    },
+    "keogh": {
+      "label": "Keogh",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Keogh_48P.pdf"
+    },
+    "peter khalil": {
+      "label": "Peter Khalil",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Peter_Khalil_48P.pdf"
+    },
+    "kingm": {
+      "label": "Kingm",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/KingM_48P.pdf"
+    },
+    "king": {
+      "label": "King",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/King_48P.pdf"
+    },
+    "landry": {
+      "label": "Landry",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Landry_48P.pdf"
+    },
+    "lawrence": {
+      "label": "Lawrence",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Lawrence_48P.pdf"
+    },
+    "laxale": {
+      "label": "Laxale",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Laxale_48P.pdf"
+    },
+    "dai le": {
+      "label": "Dai Le",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Dai_Le_48P.pdf"
+    },
+    "leeser": {
+      "label": "Leeser",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Leeser_48P.pdf"
+    },
+    "andrew leigh": {
+      "label": "Andrew Leigh",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Andrew_Leigh_48P.pdf"
+    },
+    "ley": {
+      "label": "Ley",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Ley_48P.pdf"
+    },
+    "lim": {
+      "label": "Lim",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Lim_48P.pdf"
+    },
+    "littleproudd": {
+      "label": "Littleproudd",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/LittleproudD_48P.pdf"
+    },
+    "marles": {
+      "label": "Marles",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Marles_48P.pdf"
+    },
+    "mascarenhas": {
+      "label": "Mascarenhas",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Mascarenhas_48P.pdf"
+    },
+    "mcbain": {
+      "label": "Mcbain",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/McBain_48P.pdf"
+    },
+    "mcbride": {
+      "label": "Mcbride",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/McBride_48P.pdf"
+    },
+    "mccormackm": {
+      "label": "Mccormackm",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/McCormackM_48P.pdf"
+    },
+    "mcintosh": {
+      "label": "Mcintosh",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/McIntosh_48P.pdf"
+    },
+    "mckenzie": {
+      "label": "Mckenzie",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/McKenzie_48P.pdf"
+    },
+    "miller-frost": {
+      "label": "Miller-Frost",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Miller-Frost_48P.pdf"
+    },
+    "mitchellr": {
+      "label": "Mitchellr",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/MitchellR_48P.pdf"
+    },
+    "david moncrieff": {
+      "label": "David Moncrieff",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/David_Moncrieff_48P.pdf"
+    },
+    "mulino": {
+      "label": "Mulino",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Mulino_48P.pdf"
+    },
+    "neumann": {
+      "label": "Neumann",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Neumann_48P.pdf"
+    },
+    "gabriel ng": {
+      "label": "Gabriel Ng",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Gabriel_Ng_48P.pdf"
+    },
+    "llewellyn obrien48p.pdf": {
+      "label": "Llewellyn Obrien48P.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/KN/Llewellyn_OBrien48P.pdf"
+    },
+    "obrien48p.pdf": {
+      "label": "Obrien48P.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/OBrien48P.pdf"
+    },
+    "oneil48p.pdf": {
+      "label": "Oneil48P.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/ONeil48P.pdf"
+    },
+    "pasin": {
+      "label": "Pasin",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Pasin_48P.pdf"
+    },
+    "payne": {
+      "label": "Payne",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Payne_48P.pdf"
+    },
+    "penfolda": {
+      "label": "Penfolda",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/PenfoldA_48P.pdf"
+    },
+    "phillips": {
+      "label": "Phillips",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Phillips_48P.pdf"
+    },
+    "plibersek": {
+      "label": "Plibersek",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Plibersek_48P.pdf"
+    },
+    "price": {
+      "label": "Price",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Price_48P.pdf"
+    },
+    "rae": {
+      "label": "Rae",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Rae_48P.pdf"
+    },
+    "rebellol": {
+      "label": "Rebellol",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/RebelloL_48P.pdf"
+    },
+    "reid": {
+      "label": "Reid",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Reid_48P.pdf"
+    },
+    "repacholi": {
+      "label": "Repacholi",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Repacholi_48P.pdf"
+    },
+    "rishworth": {
+      "label": "Rishworth",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Rishworth_48P.pdf"
+    },
+    "robertst": {
+      "label": "Robertst",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/RobertsT_48P.pdf"
+    },
+    "rowland": {
+      "label": "Rowland",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Rowland_48P.pdf"
+    },
+    "ryanj": {
+      "label": "Ryanj",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/RyanJ_48P.pdf"
+    },
+    "ryan": {
+      "label": "Ryan",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/Ryan_48P.pdf"
+    },
+    "pikeh": {
+      "label": "Pikeh",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/OR/PikeH_48P.pdf"
+    },
+    "scamps": {
+      "label": "Scamps",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Scamps_48P.pdf"
+    },
+    "scrymgour.pdf": {
+      "label": "Scrymgour.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Scrymgour.pdf"
+    },
+    "sharkie": {
+      "label": "Sharkie",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Sharkie_48P.pdf"
+    },
+    "sitou.pdf": {
+      "label": "Sitou.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Sitou.pdf"
+    },
+    "small": {
+      "label": "Small",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Small_48P.pdf"
+    },
+    "smithd": {
+      "label": "Smithd",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/SmithD__48P.pdf"
+    },
+    "smithm": {
+      "label": "Smithm",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/SmithM_48P.pdf"
+    },
+    "soon": {
+      "label": "Soon",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Soon_48P.pdf"
+    },
+    "spender": {
+      "label": "Spender",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Spender_48P.pdf"
+    },
+    "stanleya": {
+      "label": "Stanleya",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/StanleyA_48P.pdf"
+    },
+    "steggall.pdf": {
+      "label": "Steggall.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Steggall.pdf"
+    },
+    "swanson": {
+      "label": "Swanson",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Swanson_48P.pdf"
+    },
+    "taylor": {
+      "label": "Taylor",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Taylor_48P.pdf"
+    },
+    "tehan.pdf": {
+      "label": "Tehan.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Tehan.pdf"
+    },
+    "templeman": {
+      "label": "Templeman",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Templeman_48P.pdf"
+    },
+    "jess teesdale": {
+      "label": "Jess Teesdale",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Jess_Teesdale_48P.pdf"
+    },
+    "thistlethwaite.pdf": {
+      "label": "Thistlethwaite.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Thistlethwaite.pdf"
+    },
+    "thompson": {
+      "label": "Thompson",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Thompson_48P.pdf"
+    },
+    "thwaites.pdf": {
+      "label": "Thwaites.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Thwaites.pdf"
+    },
+    "urquharta.pdf": {
+      "label": "Urquharta.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/UrquhartA.pdf"
+    },
+    "tom venning": {
+      "label": "Tom Venning",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Tom_Venning_48P.pdf"
+    },
+    "violi": {
+      "label": "Violi",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Violi_48P.pdf"
+    },
+    "wallace": {
+      "label": "Wallace",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Wallace_48P.pdf"
+    },
+    "watson-brown": {
+      "label": "Watson-Brown",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Watson-Brown_48P.pdf"
+    },
+    "watts.pdf": {
+      "label": "Watts.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Watts.pdf"
+    },
+    "webstera.pdf": {
+      "label": "Webstera.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/WebsterA.pdf"
+    },
+    "wells": {
+      "label": "Wells",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Wells_48P.pdf"
+    },
+    "white": {
+      "label": "White",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/White_48P.pdf"
+    },
+    "wilkiea.pdf": {
+      "label": "Wilkiea.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/WilkieA.pdf"
+    },
+    "willcox.pdf": {
+      "label": "Willcox.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Willcox.pdf"
+    },
+    "wilsonj": {
+      "label": "Wilsonj",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/WilsonJ_48P.pdf"
+    },
+    "wilsonr": {
+      "label": "Wilsonr",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/WilsonR_48P.pdf"
+    },
+    "wilsont": {
+      "label": "Wilsont",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/WilsonT_48P.pdf"
+    },
+    "witty": {
+      "label": "Witty",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Witty_48P.pdf"
+    },
+    "wood.pdf": {
+      "label": "Wood.Pdf",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Wood.pdf"
+    },
+    "young": {
+      "label": "Young",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Young_48P.pdf"
+    },
+    "zappia": {
+      "label": "Zappia",
+      "url": "https://www.aph.gov.au/-/media/03_Senators_and_Members/32_Members/Register/48p/SZ/Zappia_48P.pdf"
+    }
+  },
+  "senate": []
+}

@@ -50,6 +50,10 @@ jobs:
         run: |
           python scripts/fetch_donors_aec.py
 
+      - name: Fetch disclosure index
+        run: |
+          python scripts/fetch_disclosure_index.py
+
       - name: Build static data
         run: |
           python scripts/build_static.py
@@ -58,7 +62,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/politicians.csv docs/data/politicians.json docs/data/profiles.json docs/data/meta.json docs/data/donors.json
+          git add data/politicians.csv docs/data/politicians.json docs/data/profiles.json docs/data/meta.json docs/data/donors.json docs/data/disclosures.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
