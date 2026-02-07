@@ -64,7 +64,18 @@
       </div>
     </section>
 
-    <section class="search-panel">
+    <section class="panel popular">
+      <div class="popular-header">
+        <div>
+          <h2>Popular profiles</h2>
+          <p class="muted">Quick access to the most viewed and featured profiles.</p>
+        </div>
+        <a class="ghost-link" href="#directory">Jump to full directory</a>
+      </div>
+      <div id="popularGrid" class="card-grid"></div>
+    </section>
+
+    <section id="directory" class="search-panel">
       <div>
         <h2>Search the directory</h2>
         <p class="muted">Browse by name, electorate, party, or chamber.</p>
@@ -90,7 +101,7 @@
       <div id="cardGrid" class="card-grid"></div>
     </section>
 
-    <section class="panel donors">
+    <section class="panel donors" id="donors">
       <div class="donor-header">
         <div>
           <h2>Major disclosed donors by party</h2>

@@ -74,9 +74,37 @@ function renderHome() {
     });
   }
 
+  renderPopular();
   renderCharts(parties, house, senate);
   renderCards(partyFilter);
   renderDonors();
+}
+
+function renderPopular() {
+  const popularGrid = document.getElementById('popularGrid');
+  if (!popularGrid) return;
+
+  const popular = state.politicians.filter((p) => p.featured).slice(0, 6);
+  popularGrid.innerHTML = '';
+
+  popular.forEach((p) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <h4>${p.name} <span class="featured-pill">Featured</span></h4>
+      <div class="tags">
+        <span class="tag">${p.chamber}</span>
+        <span class="tag">${p.party || 'Independent'}</span>
+      </div>
+      <p class="muted">${p.electorate || ''}</p>
+      <a href="profile.html?id=${p.id}">View profile</a>
+    `;
+    popularGrid.appendChild(card);
+  });
+
+  if (!popular.length) {
+    popularGrid.innerHTML = '<p class="muted">No featured profiles yet.</p>';
+  }
 }
 
 function renderCharts(parties, house, senate) {

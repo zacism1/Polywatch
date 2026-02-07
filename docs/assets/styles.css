@@ -247,6 +247,20 @@ input, select {
   font-weight: 600;
 }
 
+.popular-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ghost-link {
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .charts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
