@@ -3,10 +3,12 @@ import os
 
 class Config:
     SECRET_KEY = os.environ.get("SECRET_KEY", "dev")
-    SQLALCHEMY_DATABASE_URI = os.environ.get(
-        "DATABASE_URL",
-        "sqlite:///instance/politracker.db",
-    )
+    @staticmethod
+    def database_uri():
+        default_path = os.path.join(os.getcwd(), "instance", "politracker.db")
+        return os.environ.get("DATABASE_URL", f"sqlite:///{default_path}")
+
+    SQLALCHEMY_DATABASE_URI = database_uri()
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     SCHEDULER_ENABLED = os.environ.get("SCHEDULER_ENABLED", "1") == "1"
