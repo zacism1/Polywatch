@@ -44,7 +44,7 @@ jobs:
 
       - name: Run scrape pipeline (best effort)
         run: |
-          FLASK_APP=app.py flask run-scrape-once
+          FLASK_APP=app.py flask run-scrape-once || true
 
       - name: Export profiles for static site
         run: |

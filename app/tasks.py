@@ -75,8 +75,9 @@ def _setup_logging():
         return
 
     logger.setLevel(logging.INFO)
-    os.makedirs("logs", exist_ok=True)
-    handler = logging.FileHandler("logs/scrape.log")
+    log_dir = os.path.abspath("logs")
+    os.makedirs(log_dir, exist_ok=True)
+    handler = logging.FileHandler(os.path.join(log_dir, "scrape.log"))
     formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
     handler.setFormatter(formatter)
     logger.addHandler(handler)
