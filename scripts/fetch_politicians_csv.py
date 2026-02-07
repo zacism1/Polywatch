@@ -21,7 +21,15 @@ FETCH_URL_TEMPLATE = (
 
 def fetch_html(url: str) -> str:
     time.sleep(REQUEST_DELAY)
-    resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=REQUEST_TIMEOUT)
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Referer": "https://www.aph.gov.au/",
+    }
+    resp = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     return resp.text
 
