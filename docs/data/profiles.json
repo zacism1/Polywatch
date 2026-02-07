@@ -336,13 +336,7 @@
   },
   "mr-basem-abdo-mp": {
     "investments": [],
-    "policies": [
-      {
-        "title": "Hansard",
-        "date": "",
-        "source": "/Parliamentary_Business/Hansard"
-      }
-    ],
+    "policies": [],
     "correlations": []
   },
   "mr-ben-small-mp": {
