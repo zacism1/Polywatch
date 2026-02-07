@@ -1,7 +1,7 @@
 import json
 import sqlite3
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "instance" / "politracker.db"
@@ -102,7 +102,8 @@ def main():
     with OUT_PROFILES.open("w", encoding="utf-8") as f:
         json.dump(profiles, f, indent=2)
 
-    print(f"Wrote profiles for {len(profiles)} politicians at {datetime.utcnow().isoformat()}Z")
+    timestamp = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    print(f"Wrote profiles for {len(profiles)} politicians at {timestamp}")
 
 
 if __name__ == "__main__":
