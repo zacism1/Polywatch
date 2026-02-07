@@ -25,9 +25,26 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Initialize local database
+        run: |
+          mkdir -p instance
+          FLASK_APP=app.py flask init-db
+
       - name: Fetch latest politicians
         run: |
           python scripts/fetch_politicians_csv.py
+
+      - name: Seed politicians into DB
+        run: |
+          FLASK_APP=app.py flask seed-politicians
+
+      - name: Run scrape pipeline (best effort)
+        run: |
+          FLASK_APP=app.py flask run-scrape-once
+
+      - name: Export profiles for static site
+        run: |
+          python scripts/export_profiles.py
 
       - name: Fetch AEC donors
         run: |
