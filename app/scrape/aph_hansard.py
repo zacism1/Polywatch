@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from flask import current_app
 from .. import db
 from ..models import Politician, Policy
-from .utils import fetch_url, hash_text, parse_date, normalize_name, build_last_name_index
+from .utils import fetch_url, hash_text, parse_date, normalize_name, build_last_name_index, build_full_name_index, detect_name_in_line, match_speaker_line
 
 
 logger = logging.getLogger("politracker")
@@ -29,7 +29,8 @@ def scrape_hansard_updates() -> List[Policy]:
     created = []
 
     politicians = Politician.query.all()
-    name_index = build_last_name_index([p.name for p in politicians])
+    last_name_index = build_last_name_index([p.name for p in politicians])
+    full_name_index = build_full_name_index([p.name for p in politicians])
 
     for link in items[:60]:
         href = link.get("href")
@@ -42,7 +43,7 @@ def scrape_hansard_updates() -> List[Policy]:
         if not page_html:
             continue
 
-        for policy in _parse_policy_page(text, full_url, page_html, name_index):
+        for policy in _parse_policy_page(text, full_url, page_html, last_name_index, full_name_index):
             if policy:
                 created.append(policy)
 
@@ -50,13 +51,13 @@ def scrape_hansard_updates() -> List[Policy]:
     return created
 
 
-def _parse_policy_page(title: str, url: str, html: bytes, name_index) -> List[Policy]:
+def _parse_policy_page(title: str, url: str, html: bytes, last_name_index, full_name_index) -> List[Policy]:
     soup = BeautifulSoup(html, "html.parser")
     text = soup.get_text("\n")
     lines = [line.strip() for line in text.splitlines() if line.strip()]
 
     date = _extract_date(lines)
-    detected = _detect_speakers(lines, name_index)
+    detected = _detect_speakers(lines, last_name_index, full_name_index)
     policies = []
 
     for pol in detected:
@@ -81,18 +82,15 @@ def _parse_policy_page(title: str, url: str, html: bytes, name_index) -> List[Po
     return policies
 
 
-def _detect_speakers(lines, name_index) -> List[Politician]:
+def _detect_speakers(lines, last_name_index, full_name_index) -> List[Politician]:
     matches = []
     seen = set()
     for line in lines:
-        match = re.match(r"^(Senator|Mr|Ms|Mrs|Dr|Hon)\\s+([A-Z][A-Za-z'\\-]+)", line)
-        if not match:
+        name = match_speaker_line(line, last_name_index)
+        if not name:
+            name = detect_name_in_line(line, full_name_index)
+        if not name:
             continue
-        last = match.group(2).lower()
-        candidates = name_index.get(last, [])
-        if len(candidates) != 1:
-            continue
-        name = candidates[0]
         politician = Politician.query.filter_by(name=name).first()
         if politician and politician.id not in seen:
             matches.append(politician)

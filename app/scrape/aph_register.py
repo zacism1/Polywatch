@@ -1,11 +1,12 @@
 import io
 import logging
+import re
 from typing import List
 from flask import current_app
 from PyPDF2 import PdfReader
 from .. import db
 from ..models import Politician, Investment
-from .utils import fetch_url, hash_text
+from .utils import fetch_url, hash_text, build_name_index, normalize_name, build_full_name_index, detect_name_in_line
 
 
 logger = logging.getLogger("politracker")
@@ -18,6 +19,9 @@ def scrape_register_disclosures() -> List[Investment]:
     delay = current_app.config["REQUEST_DELAY_SECS"]
 
     created = []
+    names = [p.name for p in Politician.query.all()]
+    name_index = build_name_index(names)
+    full_name_index = build_full_name_index(names)
     for chamber, url in current_app.config["APH_REGISTER_URLS"].items():
         pdf_bytes = fetch_url(url, user_agent, timeout, retries, delay)
         if not pdf_bytes:
@@ -29,7 +33,7 @@ def scrape_register_disclosures() -> List[Investment]:
             logger.warning("PDF parse failed %s: %s", url, exc)
             continue
 
-        for inv in _extract_investments(text, url):
+        for inv in _extract_investments(text, url, name_index, full_name_index):
             created.append(inv)
 
     db.session.commit()
@@ -42,20 +46,28 @@ def _pdf_to_text(pdf_bytes: bytes) -> str:
     return "\n".join(pages)
 
 
-def _extract_investments(text: str, source_url: str) -> List[Investment]:
+def _extract_investments(text: str, source_url: str, name_index, full_name_index) -> List[Investment]:
     results = []
     lines = [line.strip() for line in text.splitlines() if line.strip()]
 
     current_name = None
     for line in lines:
         if line.lower().startswith("member:") or line.lower().startswith("senator:"):
-            current_name = line.split(":", 1)[-1].strip()
+            raw_name = line.split(":", 1)[-1].strip()
+            normalized = normalize_name(raw_name)
+            current_name = name_index.get(normalized, raw_name)
             continue
+
+        if not current_name:
+            detected = detect_name_in_line(line, full_name_index)
+            if detected:
+                current_name = detected
+                continue
 
         if not current_name:
             continue
 
-        if any(keyword in line.lower() for keyword in ("share", "stock", "equity", "property", "real estate")):
+        if _looks_like_investment(line):
             politician = Politician.query.filter_by(name=current_name).first()
             if not politician:
                 continue
@@ -67,7 +79,7 @@ def _extract_investments(text: str, source_url: str) -> List[Investment]:
 
             investment = Investment(
                 politician_id=politician.id,
-                asset_type="declared asset",
+                asset_type=_infer_asset_type(line),
                 company=line[:200],
                 value=None,
                 date=None,
@@ -78,3 +90,20 @@ def _extract_investments(text: str, source_url: str) -> List[Investment]:
             db.session.add(investment)
             results.append(investment)
     return results
+
+
+def _looks_like_investment(line: str) -> bool:
+    keywords = ("share", "stock", "equity", "property", "real estate", "holding", "investment", "asset")
+    text = line.lower()
+    return any(keyword in text for keyword in keywords)
+
+
+def _infer_asset_type(line: str) -> str:
+    text = line.lower()
+    if "property" in text or "real estate" in text:
+        return "property"
+    if "share" in text or "stock" in text or "equity" in text:
+        return "equity"
+    if "trust" in text:
+        return "trust"
+    return "declared asset"
