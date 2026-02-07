@@ -1,4 +1,5 @@
 import logging
+import os
 from datetime import datetime, timedelta
 from flask import current_app
 from . import db
@@ -74,6 +75,7 @@ def _setup_logging():
         return
 
     logger.setLevel(logging.INFO)
+    os.makedirs("logs", exist_ok=True)
     handler = logging.FileHandler("logs/scrape.log")
     formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
     handler.setFormatter(formatter)
