@@ -38,6 +38,10 @@ jobs:
         run: |
           FLASK_APP=app.py flask seed-politicians
 
+      - name: Create logs directory
+        run: |
+          mkdir -p logs
+
       - name: Run scrape pipeline (best effort)
         run: |
           FLASK_APP=app.py flask run-scrape-once
