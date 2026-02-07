@@ -1,10 +1,13 @@
 import logging
-from typing import List
+import re
+from typing import List, Optional
+from datetime import date
+from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from flask import current_app
 from .. import db
 from ..models import Politician, Policy
-from .utils import fetch_url, hash_text, parse_date
+from .utils import fetch_url, hash_text, parse_date, normalize_name, build_last_name_index
 
 
 logger = logging.getLogger("politracker")
@@ -25,44 +28,86 @@ def scrape_hansard_updates() -> List[Policy]:
     items = soup.select("a")
     created = []
 
-    for link in items[:50]:
+    politicians = Politician.query.all()
+    name_index = build_last_name_index([p.name for p in politicians])
+
+    for link in items[:60]:
         href = link.get("href")
         text = (link.get_text() or "").strip()
         if not href or "hansard" not in href.lower():
             continue
 
-        policy = _parse_policy_stub(text, href)
-        if not policy:
+        full_url = urljoin(base, href)
+        page_html = fetch_url(full_url, user_agent, timeout, retries, delay)
+        if not page_html:
             continue
 
-        created.append(policy)
+        for policy in _parse_policy_page(text, full_url, page_html, name_index):
+            if policy:
+                created.append(policy)
 
     db.session.commit()
     return created
 
 
-def _parse_policy_stub(title: str, url: str) -> Policy:
-    politician = Politician.query.first()
-    if not politician:
-        return None
+def _parse_policy_page(title: str, url: str, html: bytes, name_index) -> List[Policy]:
+    soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text("\n")
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
 
-    source_hash = hash_text(f"{title}|{url}")
-    existing = Policy.query.filter_by(source_hash=source_hash).first()
-    if existing:
-        return None
+    date = _extract_date(lines)
+    detected = _detect_speakers(lines, name_index)
+    policies = []
 
-    policy = Policy(
-        politician_id=politician.id,
-        bill_name=title[:300],
-        vote=None,
-        date=parse_date(""),
-        category=_infer_category(title),
-        source_url=url,
-        source_hash=source_hash,
-        raw_text=title,
-    )
-    db.session.add(policy)
-    return policy
+    for pol in detected:
+        source_hash = hash_text(f"{pol.id}|{title}|{url}")
+        existing = Policy.query.filter_by(source_hash=source_hash).first()
+        if existing:
+            continue
+
+        policy = Policy(
+            politician_id=pol.id,
+            bill_name=title[:300],
+            vote=None,
+            date=date,
+            category=_infer_category(title),
+            source_url=url,
+            source_hash=source_hash,
+            raw_text=title,
+        )
+        db.session.add(policy)
+        policies.append(policy)
+
+    return policies
+
+
+def _detect_speakers(lines, name_index) -> List[Politician]:
+    matches = []
+    seen = set()
+    for line in lines:
+        match = re.match(r"^(Senator|Mr|Ms|Mrs|Dr|Hon)\\s+([A-Z][A-Za-z'\\-]+)", line)
+        if not match:
+            continue
+        last = match.group(2).lower()
+        candidates = name_index.get(last, [])
+        if len(candidates) != 1:
+            continue
+        name = candidates[0]
+        politician = Politician.query.filter_by(name=name).first()
+        if politician and politician.id not in seen:
+            matches.append(politician)
+            seen.add(politician.id)
+        if len(matches) >= 5:
+            break
+    return matches
+
+
+def _extract_date(lines) -> Optional[date]:
+    for line in lines[:20]:
+        parsed = parse_date(line)
+        if parsed:
+            return parsed
+    return None
 
 
 def _infer_category(text: str) -> str:
