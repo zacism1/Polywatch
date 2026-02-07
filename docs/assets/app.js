@@ -411,9 +411,9 @@ function buildDisclosureData(pol) {
   const result = { house_url: null, senate_urls: [] };
 
   if (pol.chamber === 'House') {
-    const last = pol.name.split(' ').slice(-1)[0].toLowerCase();
-    const key = normalizeKey(last);
-    const entry = state.disclosures.house[last] || state.disclosures.house[key];
+    const surname = extractSurname(pol.name);
+    const key = normalizeKey(surname);
+    const entry = state.disclosures.house[surname] || state.disclosures.house[key];
     if (entry) {
       result.house_url = entry.url;
     }
@@ -426,6 +426,17 @@ function buildDisclosureData(pol) {
 
 function normalizeKey(value) {
   return (value || '').toLowerCase().replace(/[^a-z]/g, '');
+}
+
+function extractSurname(fullName) {
+  if (!fullName) return '';
+  let cleaned = fullName
+    .replace(/\\b(Mr|Ms|Mrs|Dr|Hon|Senator|Member)\\b/gi, '')
+    .replace(/\\b(MP|AM|AO|OBE|QC|KC)\\b/gi, '')
+    .replace(/\\s+/g, ' ')
+    .trim();
+  const parts = cleaned.split(' ').filter(Boolean);
+  return parts.length ? parts[parts.length - 1].toLowerCase() : '';
 }
 
 function setSummaryCard(id, label, value) {
