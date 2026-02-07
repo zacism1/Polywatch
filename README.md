@@ -27,9 +27,21 @@ python scripts/fetch_donors_aec.py
 This writes:
 - `docs/data/donors.json`
 
+### Export profile data from the local database
+After running the scrape pipeline, export the SQLite data into the static JSON format:
+
+```bash
+python scripts/export_profiles.py
+```
+
+This updates:
+- `docs/data/profiles.json`
+
 ## Automatic Updates (GitHub Actions)
 This repo includes a scheduled workflow that:
 - Fetches the current APH parliamentarian list
+- Seeds the database and runs the scrape pipeline
+- Exports profiles for the static site
 - Rebuilds the static JSON data
 - Pulls AEC annual donor disclosures
 - Commits changes back to the repo
@@ -50,6 +62,9 @@ export FLASK_APP=app.py
 flask init-db
 flask fetch-politicians
 flask seed-politicians
+flask run-scrape-once
+python scripts/export_profiles.py
+python scripts/build_static.py
 ```
 
 ## Disclaimer
