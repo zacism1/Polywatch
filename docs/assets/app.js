@@ -335,8 +335,7 @@ function renderDisclosureLinks(data) {
 
   links.innerHTML = '';
   if (!data) {
-    links.innerHTML = '<p class="muted">No disclosure document available.</p>';
-    return;
+    links.innerHTML = '<p class="muted">No disclosure document available. View the register below.</p>';
   }
 
   if (data.house_url) {
@@ -346,6 +345,11 @@ function renderDisclosureLinks(data) {
     data.senate_urls.forEach((url, idx) => {
       links.innerHTML += `<a href="${url}" target="_blank">Senate Register PDF ${idx + 1}</a>`;
     });
+  }
+
+  if (!data.house_url && (!data.senate_urls || !data.senate_urls.length)) {
+    links.innerHTML += `<a href="https://www.aph.gov.au/Senators_and_Members/Members/Register" target="_blank">House Register Index</a>`;
+    links.innerHTML += `<a href="https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Senators_Interests/Tabled_volumes" target="_blank">Senate Register Index</a>`;
   }
 }
 
@@ -398,7 +402,7 @@ function buildDisclosureData(pol) {
 
   if (pol.chamber === 'House') {
     const last = pol.name.split(' ').slice(-1)[0].toLowerCase();
-    const entry = state.disclosures.house[last];
+    const entry = state.disclosures.house[last] || state.disclosures.house[normalizeKey(last)];
     if (entry) {
       result.house_url = entry.url;
     }
@@ -407,6 +411,10 @@ function buildDisclosureData(pol) {
   }
 
   return result;
+}
+
+function normalizeKey(value) {
+  return (value || '').toLowerCase().replace(/[^a-z]/g, '');
 }
 
 function setSummaryCard(id, label, value) {
