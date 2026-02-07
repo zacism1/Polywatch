@@ -69,7 +69,7 @@ function renderHome() {
 
     featured.forEach((p) => {
       const li = document.createElement('li');
-      li.innerHTML = `<a href="profile.html?id=${p.id}">${p.name}</a><span>${p.party || 'Independent'}</span>`;
+      li.innerHTML = `<a href="${buildProfileLink(p)}">${p.name}</a><span>${p.party || 'Independent'}</span>`;
       featuredList.appendChild(li);
     });
   }
@@ -78,6 +78,14 @@ function renderHome() {
   renderCharts(parties, house, senate);
   renderCards(partyFilter);
   renderDonors();
+}
+
+function buildProfileLink(p) {
+  const disclosure = buildDisclosureData(p);
+  if (disclosure && disclosure.house_url) {
+    return disclosure.house_url;
+  }
+  return `profile.html?id=${p.id}`;
 }
 
 function renderPopular() {
@@ -97,7 +105,7 @@ function renderPopular() {
         <span class="tag">${p.party || 'Independent'}</span>
       </div>
       <p class="muted">${p.electorate || ''}</p>
-      <a href="profile.html?id=${p.id}">View profile</a>
+      <a href="${buildProfileLink(p)}" target="_blank">View profile</a>
     `;
     popularGrid.appendChild(card);
   });
@@ -179,6 +187,8 @@ function renderCards(partyFilter) {
     filtered.forEach((p) => {
       const card = document.createElement('div');
       card.className = 'card';
+      const link = buildProfileLink(p);
+      const target = link.endsWith('.pdf') ? 'target="_blank"' : '';
       card.innerHTML = `
         <h4>${p.name} ${p.featured ? '<span class="featured-pill">Featured</span>' : ''}</h4>
         <div class="tags">
@@ -186,7 +196,7 @@ function renderCards(partyFilter) {
           <span class="tag">${p.party || 'Independent'}</span>
         </div>
         <p class="muted">${p.electorate || ''}</p>
-        <a href="profile.html?id=${p.id}">View profile</a>
+        <a href="${link}" ${target}>View profile</a>
       `;
       cardGrid.appendChild(card);
     });
@@ -338,16 +348,16 @@ function renderDisclosureLinks(data) {
     links.innerHTML = '<p class="muted">No disclosure document available. View the register below.</p>';
   }
 
-  if (data.house_url) {
+  if (data && data.house_url) {
     links.innerHTML += `<a href="${data.house_url}" target="_blank">House Register PDF</a>`;
   }
-  if (data.senate_urls && data.senate_urls.length) {
+  if (data && data.senate_urls && data.senate_urls.length) {
     data.senate_urls.forEach((url, idx) => {
       links.innerHTML += `<a href="${url}" target="_blank">Senate Register PDF ${idx + 1}</a>`;
     });
   }
 
-  if (!data.house_url && (!data.senate_urls || !data.senate_urls.length)) {
+  if (!data || (!data.house_url && (!data.senate_urls || !data.senate_urls.length))) {
     links.innerHTML += `<a href="https://www.aph.gov.au/Senators_and_Members/Members/Register" target="_blank">House Register Index</a>`;
     links.innerHTML += `<a href="https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Senators_Interests/Tabled_volumes" target="_blank">Senate Register Index</a>`;
   }
@@ -402,7 +412,8 @@ function buildDisclosureData(pol) {
 
   if (pol.chamber === 'House') {
     const last = pol.name.split(' ').slice(-1)[0].toLowerCase();
-    const entry = state.disclosures.house[last] || state.disclosures.house[normalizeKey(last)];
+    const key = normalizeKey(last);
+    const entry = state.disclosures.house[last] || state.disclosures.house[key];
     if (entry) {
       result.house_url = entry.url;
     }
