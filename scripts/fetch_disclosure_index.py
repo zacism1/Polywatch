@@ -17,22 +17,10 @@ SENATE_URL = "https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Se
 USER_AGENT = "PolywatchBot/1.0 (public data for transparency)"
 
 
-def normalize_name(value: str) -> str:
+def normalize_key(value: str) -> str:
     value = (value or "").strip().lower()
-    value = re.sub(r"[^a-z\s'-]", " ", value)
-    value = re.sub(r"\b(mr|ms|mrs|dr|hon|senator|member)\b", " ", value)
-    value = re.sub(r"\s+", " ", value).strip()
+    value = re.sub(r"[^a-z]", "", value)
     return value
-
-
-def slugify(name: str) -> str:
-    return (
-        name.lower()
-        .replace("'", "")
-        .replace(".", "")
-        .replace(",", "")
-        .replace(" ", "-")
-    )
 
 
 def fetch_html(url: str, retries: int = 3, backoff: float = 1.5) -> str:
@@ -59,19 +47,19 @@ def parse_house_disclosures() -> dict:
         if "register/48p" not in href.lower():
             continue
         full = urljoin(HOUSE_URL, href)
-        text = (a.get_text() or "").strip()
-        links.append((text, full))
+        links.append(full)
 
     results = {}
-    for text, url in links:
+    for url in links:
         filename = url.split("/")[-1]
-        # e.g., Abdo_48P.pdf -> Abdo
         base = filename.replace("_48P.pdf", "").replace("_48p.pdf", "")
         last = base.replace("_", " ").strip()
-        results[last.lower()] = {
+        key = normalize_key(last)
+        results.setdefault(key, [])
+        results[key].append({
             "label": last.title(),
             "url": url,
-        }
+        })
     return results
 
 
@@ -116,7 +104,7 @@ def main():
     with OUT_DISCLOSURES.open("w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2)
 
-    print(f"Wrote disclosures for {len(house)} House members and {len(senate)} Senate PDFs")
+    print(f"Wrote disclosures for {len(house)} House surnames and {len(senate)} Senate PDFs")
 
 
 if __name__ == "__main__":

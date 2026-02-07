@@ -69,7 +69,7 @@ function renderHome() {
 
     featured.forEach((p) => {
       const li = document.createElement('li');
-      li.innerHTML = `<a href="${buildProfileLink(p)}">${p.name}</a><span>${p.party || 'Independent'}</span>`;
+      li.innerHTML = `<a href="${buildProfileLink(p)}" target="_blank">${p.name}</a><span>${p.party || 'Independent'}</span>`;
       featuredList.appendChild(li);
     });
   }
@@ -82,8 +82,8 @@ function renderHome() {
 
 function buildProfileLink(p) {
   const disclosure = buildDisclosureData(p);
-  if (disclosure && disclosure.house_url) {
-    return disclosure.house_url;
+  if (disclosure && disclosure.house_urls.length) {
+    return disclosure.house_urls[0];
   }
   return `profile.html?id=${p.id}`;
 }
@@ -105,7 +105,7 @@ function renderPopular() {
         <span class="tag">${p.party || 'Independent'}</span>
       </div>
       <p class="muted">${p.electorate || ''}</p>
-      <a href="${buildProfileLink(p)}" target="_blank">View profile</a>
+      <a href="${buildProfileLink(p)}" target="_blank">View disclosure</a>
     `;
     popularGrid.appendChild(card);
   });
@@ -196,7 +196,7 @@ function renderCards(partyFilter) {
           <span class="tag">${p.party || 'Independent'}</span>
         </div>
         <p class="muted">${p.electorate || ''}</p>
-        <a href="${link}" ${target}>View profile</a>
+        <a href="${link}" ${target}>View disclosure</a>
       `;
       cardGrid.appendChild(card);
     });
@@ -345,21 +345,24 @@ function renderDisclosureLinks(data) {
 
   links.innerHTML = '';
   if (!data) {
-    links.innerHTML = '<p class="muted">No disclosure document available. View the register below.</p>';
+    links.innerHTML = '<p class="muted">No disclosure document available.</p>';
+    return;
   }
 
-  if (data && data.house_url) {
-    links.innerHTML += `<a href="${data.house_url}" target="_blank">House Register PDF</a>`;
+  if (data.house_urls.length) {
+    data.house_urls.forEach((item) => {
+      links.innerHTML += `<a href="${item.url}" target="_blank">${item.label} (House)</a>`;
+    });
   }
-  if (data && data.senate_urls && data.senate_urls.length) {
+
+  if (data.senate_urls.length) {
     data.senate_urls.forEach((url, idx) => {
       links.innerHTML += `<a href="${url}" target="_blank">Senate Register PDF ${idx + 1}</a>`;
     });
   }
 
-  if (!data || (!data.house_url && (!data.senate_urls || !data.senate_urls.length))) {
-    links.innerHTML += `<a href="https://www.aph.gov.au/Senators_and_Members/Members/Register" target="_blank">House Register Index</a>`;
-    links.innerHTML += `<a href="https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Senators_Interests/Tabled_volumes" target="_blank">Senate Register Index</a>`;
+  if (!data.house_urls.length && !data.senate_urls.length) {
+    links.innerHTML = '<p class="muted">No disclosure document found for this name.</p>';
   }
 }
 
@@ -367,56 +370,35 @@ function renderProfile() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get('id');
   const data = state.politicians.find((p) => p.id === id);
-  const profile = state.profiles[id] || {};
 
   if (!data) return;
 
   const summary = document.getElementById('profileSummary');
   if (summary) {
     summary.innerHTML = `
-      <h1>${data.name} ${data.featured ? '<span class="featured-pill">Featured</span>' : ''}</h1>
+      <h1>${data.name}</h1>
       <p class="muted">${data.party || 'Independent'} • ${data.electorate || ''}</p>
     `;
   }
 
   setSummaryCard('summaryChamber', 'Chamber', data.chamber || 'Unknown');
-  setSummaryCard('summaryInvestments', 'Investments', `${profile.investments?.length || 0}`);
-  setSummaryCard('summaryPolicies', 'Policy signals', `${profile.policies?.length || 0}`);
-  setSummaryCard('summaryFlags', 'Flags', `${profile.correlations?.length || 0}`);
+  setSummaryCard('summaryInvestments', 'Investments', 'See disclosure');
+  setSummaryCard('summaryPolicies', 'Policy signals', 'See disclosure');
+  setSummaryCard('summaryFlags', 'Flags', 'See disclosure');
 
   const disclosureData = buildDisclosureData(data);
   renderDisclosureLinks(disclosureData);
-
-  renderTable('correlationTable', ['Policy', 'Asset', 'Signal'], profile.correlations || [], (row) => [
-    row.policy || '—',
-    row.asset || '—',
-    row.details || '—',
-  ]);
-
-  renderTable('investmentTable', ['Asset', 'Date', 'Source'], profile.investments || [], (row) => [
-    row.asset || '—',
-    row.date || '—',
-    row.source || '—',
-  ]);
-
-  renderTable('policyTable', ['Policy', 'Date', 'Source'], profile.policies || [], (row) => [
-    row.title || '—',
-    row.date || '—',
-    row.source || '—',
-  ]);
 }
 
 function buildDisclosureData(pol) {
   if (!state.disclosures) return null;
-  const result = { house_url: null, senate_urls: [] };
+  const result = { house_urls: [], senate_urls: [] };
 
   if (pol.chamber === 'House') {
     const surname = extractSurname(pol.name);
     const key = normalizeKey(surname);
-    const entry = state.disclosures.house[surname] || state.disclosures.house[key];
-    if (entry) {
-      result.house_url = entry.url;
-    }
+    const entries = state.disclosures.house[key] || [];
+    result.house_urls = entries;
   } else if (pol.chamber === 'Senate') {
     result.senate_urls = state.disclosures.senate.map((item) => item.url);
   }
@@ -431,9 +413,9 @@ function normalizeKey(value) {
 function extractSurname(fullName) {
   if (!fullName) return '';
   let cleaned = fullName
-    .replace(/\\b(Mr|Ms|Mrs|Dr|Hon|Senator|Member)\\b/gi, '')
-    .replace(/\\b(MP|AM|AO|OBE|QC|KC)\\b/gi, '')
-    .replace(/\\s+/g, ' ')
+    .replace(/\b(Mr|Ms|Mrs|Dr|Hon|Senator|Member)\b/gi, '')
+    .replace(/\b(MP|AM|AO|OBE|QC|KC)\b/gi, '')
+    .replace(/\s+/g, ' ')
     .trim();
   const parts = cleaned.split(' ').filter(Boolean);
   return parts.length ? parts[parts.length - 1].toLowerCase() : '';
@@ -443,37 +425,6 @@ function setSummaryCard(id, label, value) {
   const el = document.getElementById(id);
   if (!el) return;
   el.innerHTML = `<span class="muted">${label}</span><h3>${value}</h3>`;
-}
-
-function renderTable(containerId, headers, rows, mapper) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
-
-  if (!rows.length) {
-    container.innerHTML = '<p class="muted">No records available yet.</p>';
-    return;
-  }
-
-  const table = document.createElement('table');
-  table.className = 'table';
-  const thead = document.createElement('thead');
-  thead.innerHTML = `<tr>${headers.map((h) => `<th>${h}</th>`).join('')}</tr>`;
-  table.appendChild(thead);
-
-  const tbody = document.createElement('tbody');
-  rows.forEach((row) => {
-    const tr = document.createElement('tr');
-    mapper(row).forEach((cell) => {
-      const td = document.createElement('td');
-      td.textContent = cell;
-      tr.appendChild(td);
-    });
-    tbody.appendChild(tr);
-  });
-  table.appendChild(tbody);
-
-  container.innerHTML = '';
-  container.appendChild(table);
 }
 
 (async function init() {
