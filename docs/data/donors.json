@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T04:22:08.870754Z",
+  "generated_at": "2026-02-09T05:08:06.881808Z",
   "financial_year": "2024-25",
   "source": "AEC Transparency Register (Annual Data Download)",
   "parties": [
@@ -490,7 +490,7 @@
           "amount": 223700.0
         },
         {
-          "name": "Private Healthcare Australia",
+          "name": "Private Healthcare Australia Limited",
           "amount": 194700.0
         },
         {
@@ -577,7 +577,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 9274305.0
+          "amount": 9319005.0
         }
       ]
     },
@@ -700,7 +700,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1129062.0
+          "amount": 1134062.0
         }
       ]
     },
@@ -1045,7 +1045,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 498147.0
+          "amount": 498397.0
         }
       ]
     },
@@ -1259,7 +1259,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 2381430.0
+          "amount": 2406430.0
         }
       ]
     },
@@ -1269,6 +1269,10 @@
         {
           "name": "Australian Capital Equity Pty Limited",
           "amount": 200000.0
+        },
+        {
+          "name": "Ko, Viktor",
+          "amount": 70626.0
         },
         {
           "name": "Communications, Electrical and Plumbing Union - Electrical, Energy and Services Division",
@@ -1301,10 +1305,6 @@
         {
           "name": "Woodside Energy Group Ltd",
           "amount": 27775.0
-        },
-        {
-          "name": "Satterley Property Group Pty Ltd",
-          "amount": 27365.0
         }
       ],
       "yearly_totals": [
@@ -1382,7 +1382,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 840614.0
+          "amount": 911240.0
         }
       ]
     },
@@ -1818,7 +1818,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 2379726.0
+          "amount": 2385276.0
         }
       ]
     },
@@ -1961,12 +1961,12 @@
           "amount": 250000.0
         },
         {
-          "name": "The Gandel Group Pty Ltd",
+          "name": "Holypeak Pty Ltd",
           "amount": 250000.0
         },
         {
-          "name": "Hemmes Trading Pty Ltd",
-          "amount": 212469.0
+          "name": "The Gandel Group Pty Ltd",
+          "amount": 250000.0
         }
       ],
       "yearly_totals": [
@@ -2040,7 +2040,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 10744328.0
+          "amount": 10990828.0
         }
       ]
     },
@@ -2286,7 +2286,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1320044.0
+          "amount": 1347544.0
         }
       ]
     },
@@ -2631,7 +2631,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 3501783.0
+          "amount": 3533283.0
         }
       ]
     },
