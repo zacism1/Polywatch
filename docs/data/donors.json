@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-09T05:08:06.881808Z",
+  "generated_at": "2026-02-16T05:07:28.578690Z",
   "financial_year": "2024-25",
   "source": "AEC Transparency Register (Annual Data Download)",
   "parties": [
@@ -700,7 +700,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1134062.0
+          "amount": 1179162.0
         }
       ]
     },
@@ -1045,7 +1045,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 498397.0
+          "amount": 500897.0
         }
       ]
     },
@@ -1413,6 +1413,10 @@
           "amount": 40000.0
         },
         {
+          "name": "Out There NT P/L",
+          "amount": 35000.0
+        },
+        {
           "name": "Gaymark Group Pty Ltd",
           "amount": 30000.0
         },
@@ -1439,10 +1443,6 @@
         {
           "name": "Santos Limited",
           "amount": 5000.0
-        },
-        {
-          "name": "Australian Energy Producers",
-          "amount": 2200.0
         }
       ],
       "yearly_totals": [
@@ -1472,7 +1472,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 269200.0
+          "amount": 304200.0
         }
       ]
     },
@@ -1818,7 +1818,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 2385276.0
+          "amount": 2435276.0
         }
       ]
     },
@@ -2040,7 +2040,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 10990828.0
+          "amount": 11035828.0
         }
       ]
     },
@@ -2207,8 +2207,8 @@
           "amount": 49500.0
         },
         {
-          "name": "Falinski, Jason",
-          "amount": 45000.0
+          "name": "Smith, Richard",
+          "amount": 46500.0
         }
       ],
       "yearly_totals": [
@@ -2286,7 +2286,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1347544.0
+          "amount": 1394044.0
         }
       ]
     },
@@ -2425,12 +2425,12 @@
           "amount": 16500.0
         },
         {
-          "name": "The Lottery Corporation Limited",
-          "amount": 15400.0
+          "name": "Smith, Richard",
+          "amount": 16000.0
         },
         {
-          "name": "Medicines Australia Limited",
-          "amount": 15200.0
+          "name": "The Lottery Corporation Limited",
+          "amount": 15400.0
         }
       ],
       "yearly_totals": [
@@ -2508,7 +2508,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 591499.0
+          "amount": 607499.0
         }
       ]
     },
@@ -2631,7 +2631,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 3533283.0
+          "amount": 3553283.0
         }
       ]
     },
@@ -2790,7 +2790,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1310843.0
+          "amount": 1320743.0
         }
       ]
     },
@@ -2927,6 +2927,10 @@
           "amount": 90000.0
         },
         {
+          "name": "Manildra Group",
+          "amount": 33200.0
+        },
+        {
           "name": "Registered Clubs Association of NSW (t/as ClubsNSW)",
           "amount": 29186.0
         },
@@ -2957,10 +2961,6 @@
         {
           "name": "Precision Public Affairs Pty Ltd",
           "amount": 2000.0
-        },
-        {
-          "name": "Coal Australia Limited",
-          "amount": 1650.0
         }
       ],
       "yearly_totals": [
@@ -3038,7 +3038,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 197332.0
+          "amount": 230532.0
         }
       ]
     },
