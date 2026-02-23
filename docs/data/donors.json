@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16T05:07:28.578690Z",
+  "generated_at": "2026-02-23T05:05:25.059398Z",
   "financial_year": "2024-25",
   "source": "AEC Transparency Register (Annual Data Download)",
   "parties": [
@@ -162,11 +162,11 @@
           "amount": 29850.0
         },
         {
-          "name": "DOMINET DIGITAL CORPORATION PTY LTD",
+          "name": "McKinnon, Suzanne",
           "amount": 20000.0
         },
         {
-          "name": "McKinnon, Suzanne",
+          "name": "Perini, Sally",
           "amount": 20000.0
         }
       ],
@@ -237,7 +237,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1894616.0
+          "amount": 1874616.0
         }
       ]
     },
@@ -335,7 +335,12 @@
     },
     {
       "party": "Australian Greens, Tasmanian Branch",
-      "top_donors": [],
+      "top_donors": [
+        {
+          "name": "DOMINET DIGITAL CORPORATION PTY LTD",
+          "amount": 20000.0
+        }
+      ],
       "yearly_totals": [
         {
           "year": "2008-2009",
@@ -372,6 +377,10 @@
         {
           "year": "2023-24",
           "amount": 45100.0
+        },
+        {
+          "year": "2024-25",
+          "amount": 20000.0
         }
       ]
     },
@@ -577,7 +586,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 9319005.0
+          "amount": 9316836.0
         }
       ]
     },
@@ -946,6 +955,10 @@
           "amount": 39517.0
         },
         {
+          "name": "Martin, James",
+          "amount": 32096.0
+        },
+        {
           "name": "Mullen, Charis",
           "amount": 31000.0
         },
@@ -964,10 +977,6 @@
         {
           "name": "Gilbert, Francis",
           "amount": 26000.0
-        },
-        {
-          "name": "Pease, Joan",
-          "amount": 22211.0
         }
       ],
       "yearly_totals": [
@@ -1045,7 +1054,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 500897.0
+          "amount": 540162.0
         }
       ]
     },
@@ -1814,11 +1823,11 @@
         },
         {
           "year": "2023-24",
-          "amount": 1209933.0
+          "amount": 1211733.0
         },
         {
           "year": "2024-25",
-          "amount": 2435276.0
+          "amount": 2460276.0
         }
       ]
     },
@@ -2286,7 +2295,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1394044.0
+          "amount": 1424044.0
         }
       ]
     },
@@ -2631,7 +2640,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 3553283.0
+          "amount": 3578283.0
         }
       ]
     },
@@ -2699,6 +2708,10 @@
           "amount": 72000.0
         },
         {
+          "name": "THE TRUSTEE FOR JOHN A. MCPHEE TRUST",
+          "amount": 50000.0
+        },
+        {
           "name": "Australian Hotels Association - Federal Office",
           "amount": 47610.0
         },
@@ -2712,10 +2725,6 @@
         },
         {
           "name": "Fenwick, Simon",
-          "amount": 30000.0
-        },
-        {
-          "name": "Vicars, Will",
           "amount": 30000.0
         }
       ],
@@ -2790,7 +2799,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1320743.0
+          "amount": 1370743.0
         }
       ]
     },
@@ -3236,6 +3245,10 @@
           "amount": 72891.0
         },
         {
+          "name": "Aroney, Gregory",
+          "amount": 42338.0
+        },
+        {
           "name": "Snow, Thomas",
           "amount": 27600.0
         },
@@ -3254,10 +3267,6 @@
         {
           "name": "Morris, Stephen",
           "amount": 20000.0
-        },
-        {
-          "name": "Ison, Pam",
-          "amount": 19250.0
         }
       ],
       "yearly_totals": [
@@ -3311,7 +3320,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1001383.0
+          "amount": 1043721.0
         }
       ]
     },
