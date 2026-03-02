@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-23T05:05:25.059398Z",
+  "generated_at": "2026-03-02T04:57:06.005255Z",
   "financial_year": "2024-25",
   "source": "AEC Transparency Register (Annual Data Download)",
   "parties": [
@@ -586,7 +586,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 9316836.0
+          "amount": 9416836.0
         }
       ]
     },
@@ -1280,7 +1280,7 @@
           "amount": 200000.0
         },
         {
-          "name": "Ko, Viktor",
+          "name": "Viktor Ko",
           "amount": 70626.0
         },
         {
@@ -1681,10 +1681,6 @@
           "amount": 45000.0
         },
         {
-          "name": "Western Australian Shooting Association",
-          "amount": 23000.0
-        },
-        {
           "name": "Keldoulis, Robert",
           "amount": 22990.0
         },
@@ -1712,7 +1708,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 274990.0
+          "amount": 251990.0
         }
       ]
     },
@@ -1827,7 +1823,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 2460276.0
+          "amount": 2533276.0
         }
       ]
     },
@@ -1855,6 +1851,10 @@
           "amount": 90000.0
         },
         {
+          "name": "Lennon, Tony",
+          "amount": 78600.0
+        },
+        {
           "name": "Coogee Chemicals Pty Ltd",
           "amount": 66864.0
         },
@@ -1868,10 +1868,6 @@
         },
         {
           "name": "Packer, Margaret",
-          "amount": 54255.0
-        },
-        {
-          "name": "Packer, William",
           "amount": 54255.0
         }
       ],
@@ -1930,7 +1926,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1363032.0
+          "amount": 1479632.0
         }
       ]
     },
@@ -1954,6 +1950,10 @@
           "amount": 500000.0
         },
         {
+          "name": "Meriton Properties Pty Ltd",
+          "amount": 500000.0
+        },
+        {
           "name": "GSA Capital Pty Ltd",
           "amount": 471197.0
         },
@@ -1971,10 +1971,6 @@
         },
         {
           "name": "Holypeak Pty Ltd",
-          "amount": 250000.0
-        },
-        {
-          "name": "The Gandel Group Pty Ltd",
           "amount": 250000.0
         }
       ],
@@ -2045,11 +2041,11 @@
         },
         {
           "year": "2023-24",
-          "amount": 3352816.0
+          "amount": 3354916.0
         },
         {
           "year": "2024-25",
-          "amount": 11035828.0
+          "amount": 11736602.0
         }
       ]
     },
@@ -2196,12 +2192,16 @@
           "amount": 100000.0
         },
         {
-          "name": "Simonds Group Ltd",
+          "name": "Simonds Group",
           "amount": 62000.0
         },
         {
           "name": "Wakil AO, Isaac",
           "amount": 60000.0
+        },
+        {
+          "name": "Lebami Pty Ltd",
+          "amount": 50000.0
         },
         {
           "name": "Myers, Allan",
@@ -2212,12 +2212,8 @@
           "amount": 50000.0
         },
         {
-          "name": "MA FINANCIAL GROUP LIMITED",
+          "name": "MA Financial Group Limited",
           "amount": 49500.0
-        },
-        {
-          "name": "Smith, Richard",
-          "amount": 46500.0
         }
       ],
       "yearly_totals": [
@@ -2291,11 +2287,11 @@
         },
         {
           "year": "2023-24",
-          "amount": 278107.0
+          "amount": 282607.0
         },
         {
           "year": "2024-25",
-          "amount": 1424044.0
+          "amount": 1501144.0
         }
       ]
     },
@@ -2640,7 +2636,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 3578283.0
+          "amount": 3668283.0
         }
       ]
     },
@@ -2708,10 +2704,6 @@
           "amount": 72000.0
         },
         {
-          "name": "THE TRUSTEE FOR JOHN A. MCPHEE TRUST",
-          "amount": 50000.0
-        },
-        {
           "name": "Australian Hotels Association - Federal Office",
           "amount": 47610.0
         },
@@ -2725,6 +2717,10 @@
         },
         {
           "name": "Fenwick, Simon",
+          "amount": 30000.0
+        },
+        {
+          "name": "Vicars, Will",
           "amount": 30000.0
         }
       ],
@@ -2799,7 +2795,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1370743.0
+          "amount": 1320743.0
         }
       ]
     },
@@ -2936,6 +2932,10 @@
           "amount": 90000.0
         },
         {
+          "name": "THE TRUSTEE FOR JOHN A. MCPHEE TRUST",
+          "amount": 50000.0
+        },
+        {
           "name": "Manildra Group",
           "amount": 33200.0
         },
@@ -2965,10 +2965,6 @@
         },
         {
           "name": "Customer Owned Banking Association",
-          "amount": 2000.0
-        },
-        {
-          "name": "Precision Public Affairs Pty Ltd",
           "amount": 2000.0
         }
       ],
@@ -3047,7 +3043,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 230532.0
+          "amount": 280532.0
         }
       ]
     },
@@ -3391,6 +3387,32 @@
       "party": "Tammy Tyrrell for Tasmania",
       "top_donors": [],
       "yearly_totals": []
+    },
+    {
+      "party": "The Great Australian Party",
+      "top_donors": [],
+      "yearly_totals": [
+        {
+          "year": "2019-20",
+          "amount": 200000.0
+        },
+        {
+          "year": "2020-21",
+          "amount": 300000.0
+        },
+        {
+          "year": "2021-22",
+          "amount": 186000.0
+        },
+        {
+          "year": "2022-23",
+          "amount": 20000.0
+        },
+        {
+          "year": "2023-24",
+          "amount": 50000.0
+        }
+      ]
     },
     {
       "party": "The Greens (WA) Inc",
