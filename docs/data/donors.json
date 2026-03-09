@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-02T04:57:06.005255Z",
+  "generated_at": "2026-03-09T04:58:53.673561Z",
   "financial_year": "2024-25",
   "source": "AEC Transparency Register (Annual Data Download)",
   "parties": [
@@ -709,7 +709,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1179162.0
+          "amount": 1181662.0
         }
       ]
     },
@@ -1054,7 +1054,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 540162.0
+          "amount": 560162.0
         }
       ]
     },
@@ -1300,6 +1300,10 @@
           "amount": 45500.0
         },
         {
+          "name": "Home Group",
+          "amount": 45414.0
+        },
+        {
           "name": "The Pharmacy Guild of Australia",
           "amount": 38500.0
         },
@@ -1310,10 +1314,6 @@
         {
           "name": "Australian Rail Tram and Bus Industry Union",
           "amount": 30000.0
-        },
-        {
-          "name": "Woodside Energy Group Ltd",
-          "amount": 27775.0
         }
       ],
       "yearly_totals": [
@@ -1391,7 +1391,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 911240.0
+          "amount": 974954.0
         }
       ]
     },
@@ -1823,7 +1823,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 2533276.0
+          "amount": 2508276.0
         }
       ]
     },
@@ -2045,7 +2045,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 11736602.0
+          "amount": 11877602.0
         }
       ]
     },
@@ -2184,16 +2184,16 @@
           "amount": 125000.0
         },
         {
+          "name": "Simonds Group",
+          "amount": 124000.0
+        },
+        {
           "name": "MEURS, KIM",
           "amount": 100000.0
         },
         {
           "name": "PCI Pty Ltd",
           "amount": 100000.0
-        },
-        {
-          "name": "Simonds Group",
-          "amount": 62000.0
         },
         {
           "name": "Wakil AO, Isaac",
@@ -2291,7 +2291,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1501144.0
+          "amount": 1564144.0
         }
       ]
     },
@@ -2636,7 +2636,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 3668283.0
+          "amount": 3743283.0
         }
       ]
     },
@@ -2928,6 +2928,10 @@
       "party": "National Party of Australia - N.S.W.",
       "top_donors": [
         {
+          "name": "Aitken Mount Capital Partners",
+          "amount": 134000.0
+        },
+        {
           "name": "Gowing Bros Ltd",
           "amount": 90000.0
         },
@@ -2962,10 +2966,6 @@
         {
           "name": "PremierNational Pty Ltd",
           "amount": 2640.0
-        },
-        {
-          "name": "Customer Owned Banking Association",
-          "amount": 2000.0
         }
       ],
       "yearly_totals": [
@@ -3043,7 +3043,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 280532.0
+          "amount": 414532.0
         }
       ]
     },
