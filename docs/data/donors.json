@@ -1,8 +1,13 @@
 {
-  "generated_at": "2026-03-16T05:23:51.785134Z",
+  "generated_at": "2026-03-23T05:11:50.852496Z",
   "financial_year": "2024-25",
   "source": "AEC Transparency Register (Annual Data Download)",
   "parties": [
+    {
+      "party": "Affordable Housing Now - Sustainable Australia Party",
+      "top_donors": [],
+      "yearly_totals": []
+    },
     {
       "party": "Animal Justice Party",
       "top_donors": [
@@ -127,6 +132,56 @@
       "yearly_totals": []
     },
     {
+      "party": "Australian Federation Party",
+      "top_donors": [],
+      "yearly_totals": []
+    },
+    {
+      "party": "Australian Federation Party Australian Capital Territory",
+      "top_donors": [],
+      "yearly_totals": []
+    },
+    {
+      "party": "Australian Federation Party New South Wales",
+      "top_donors": [],
+      "yearly_totals": []
+    },
+    {
+      "party": "Australian Federation Party Northern Territory",
+      "top_donors": [],
+      "yearly_totals": []
+    },
+    {
+      "party": "Australian Federation Party Queensland",
+      "top_donors": [],
+      "yearly_totals": []
+    },
+    {
+      "party": "Australian Federation Party South Australia",
+      "top_donors": [],
+      "yearly_totals": []
+    },
+    {
+      "party": "Australian Federation Party Tasmania",
+      "top_donors": [],
+      "yearly_totals": []
+    },
+    {
+      "party": "Australian Federation Party Victoria",
+      "top_donors": [],
+      "yearly_totals": [
+        {
+          "year": "2021-22",
+          "amount": 453.0
+        }
+      ]
+    },
+    {
+      "party": "Australian Federation Party Western Australia",
+      "top_donors": [],
+      "yearly_totals": []
+    },
+    {
       "party": "Australian Greens",
       "top_donors": [
         {
@@ -154,20 +209,20 @@
           "amount": 80000.0
         },
         {
-          "name": "Wilkinson, Tobi",
-          "amount": 40000.0
-        },
-        {
-          "name": "Hill, Stephen",
-          "amount": 29850.0
-        },
-        {
           "name": "McKinnon, Suzanne",
           "amount": 20000.0
         },
         {
           "name": "Perini, Sally",
           "amount": 20000.0
+        },
+        {
+          "name": "Barrenger, John",
+          "amount": 19500.0
+        },
+        {
+          "name": "Axelrod, Peter",
+          "amount": 18166.0
         }
       ],
       "yearly_totals": [
@@ -237,13 +292,17 @@
         },
         {
           "year": "2024-25",
-          "amount": 1874616.0
+          "amount": 1804766.0
         }
       ]
     },
     {
       "party": "Australian Greens (South Australia)",
       "top_donors": [
+        {
+          "name": "Yassine, Hilal",
+          "amount": 50000.0
+        },
         {
           "name": "Thomas, Paul",
           "amount": 30000.0
@@ -292,14 +351,24 @@
         },
         {
           "year": "2024-25",
-          "amount": 87540.0
+          "amount": 137540.0
         }
       ]
     },
     {
       "party": "Australian Greens Victoria",
-      "top_donors": [],
-      "yearly_totals": []
+      "top_donors": [
+        {
+          "name": "Hill, Stephen",
+          "amount": 49850.0
+        }
+      ],
+      "yearly_totals": [
+        {
+          "year": "2024-25",
+          "amount": 49850.0
+        }
+      ]
     },
     {
       "party": "Australian Greens, Australian Capital Territory Branch",
@@ -610,6 +679,10 @@
           "amount": 90000.0
         },
         {
+          "name": "SWYFTX PTY LTD",
+          "amount": 71500.0
+        },
+        {
           "name": "The Pharmacy Guild of Australia",
           "amount": 59400.0
         },
@@ -628,10 +701,6 @@
         {
           "name": "Maurice Blackburn Pty Ltd",
           "amount": 36145.0
-        },
-        {
-          "name": "Westpac Banking Corporation",
-          "amount": 30931.0
         }
       ],
       "yearly_totals": [
@@ -709,7 +778,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1203662.0
+          "amount": 1279662.0
         }
       ]
     },
@@ -1054,7 +1123,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 560162.0
+          "amount": 575162.0
         }
       ]
     },
@@ -1728,6 +1797,10 @@
           "amount": 100000.0
         },
         {
+          "name": "FINICO PTY LTD atf MORRIS FAMILY TRUST",
+          "amount": 94000.0
+        },
+        {
           "name": "Tactic Spaces Pty Ltd",
           "amount": 88061.0
         },
@@ -1750,10 +1823,6 @@
         {
           "name": "Willebrands, Claire",
           "amount": 66400.0
-        },
-        {
-          "name": "Hull, John Francis",
-          "amount": 50500.0
         }
       ],
       "yearly_totals": [
@@ -1819,11 +1888,11 @@
         },
         {
           "year": "2023-24",
-          "amount": 1211733.0
+          "amount": 1231533.0
         },
         {
           "year": "2024-25",
-          "amount": 2553926.0
+          "amount": 2667926.0
         }
       ]
     },
@@ -2045,7 +2114,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 12187602.0
+          "amount": 12273602.0
         }
       ]
     },
@@ -2299,10 +2368,6 @@
       "party": "Liberal Party of Australia - ACT Division",
       "top_donors": [
         {
-          "name": "PG Consolidated Pty Ltd as Trustee for PG Trust",
-          "amount": 20000.0
-        },
-        {
           "name": "Customer Owned Banking Association",
           "amount": 1410.0
         },
@@ -2390,7 +2455,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 22510.0
+          "amount": 2510.0
         }
       ]
     },
@@ -2636,7 +2701,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 3836783.0
+          "amount": 4035183.0
         }
       ]
     },
@@ -2795,7 +2860,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1320743.0
+          "amount": 1295743.0
         }
       ]
     },
@@ -2956,16 +3021,16 @@
           "amount": 27390.0
         },
         {
+          "name": "National Club Ltd",
+          "amount": 25000.0
+        },
+        {
           "name": "Australian Hotels Association - Federal Office",
           "amount": 6375.0
         },
         {
           "name": "TABCORP HOLDINGS LIMITED",
           "amount": 5500.0
-        },
-        {
-          "name": "PremierNational Pty Ltd",
-          "amount": 2640.0
         }
       ],
       "yearly_totals": [
@@ -3043,7 +3108,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 414532.0
+          "amount": 439532.0
         }
       ]
     },
@@ -3379,11 +3444,6 @@
       ]
     },
     {
-      "party": "Sustainable Australia Party - Universal Basic Income",
-      "top_donors": [],
-      "yearly_totals": []
-    },
-    {
       "party": "Tammy Tyrrell for Tasmania",
       "top_donors": [],
       "yearly_totals": []
@@ -3563,61 +3623,6 @@
           "amount": 32715.0
         }
       ]
-    },
-    {
-      "party": "Trumpet of Patriots",
-      "top_donors": [
-        {
-          "name": "MINERALOGY PTY LTD",
-          "amount": 52889378.0
-        }
-      ],
-      "yearly_totals": [
-        {
-          "year": "2024-25",
-          "amount": 52889378.0
-        }
-      ]
-    },
-    {
-      "party": "Trumpet of Patriots Party Australian Capital Territory",
-      "top_donors": [],
-      "yearly_totals": []
-    },
-    {
-      "party": "Trumpet of Patriots Party New South Wales",
-      "top_donors": [],
-      "yearly_totals": []
-    },
-    {
-      "party": "Trumpet of Patriots Party Northern Territory",
-      "top_donors": [],
-      "yearly_totals": []
-    },
-    {
-      "party": "Trumpet of Patriots Party Queensland",
-      "top_donors": [],
-      "yearly_totals": []
-    },
-    {
-      "party": "Trumpet of Patriots Party South Australia",
-      "top_donors": [],
-      "yearly_totals": []
-    },
-    {
-      "party": "Trumpet of Patriots Party Tasmania",
-      "top_donors": [],
-      "yearly_totals": []
-    },
-    {
-      "party": "Trumpet of Patriots Party Victoria",
-      "top_donors": [],
-      "yearly_totals": []
-    },
-    {
-      "party": "Trumpet of Patriots Western Australia",
-      "top_donors": [],
-      "yearly_totals": []
     },
     {
       "party": "Victorian Socialists",
