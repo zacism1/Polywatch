@@ -274,7 +274,7 @@
   {
     "id": "senator-the-hon-matthew-canavan",
     "name": "Senator the Hon Matthew Canavan",
-    "party": "",
+    "party": "The Nationals",
     "electorate": "Queensland",
     "chamber": "Senate",
     "featured": false
@@ -922,7 +922,7 @@
   {
     "id": "senator-kerrynne-liddle",
     "name": "Senator Kerrynne Liddle",
-    "party": "Liberal Party of Australia",
+    "party": "",
     "electorate": "South Australia",
     "chamber": "Senate",
     "featured": false
