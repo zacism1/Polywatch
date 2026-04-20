@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T05:47:29.615327Z",
+  "generated_at": "2026-04-20T05:48:43.184737Z",
   "financial_year": "2024-25",
   "source": "AEC Transparency Register (Annual Data Download)",
   "parties": [
@@ -1381,8 +1381,8 @@
           "amount": 33000.0
         },
         {
-          "name": "Australian Rail Tram and Bus Industry Union",
-          "amount": 30000.0
+          "name": "Burraneer Holdings Pty Ltd",
+          "amount": 31000.0
         }
       ],
       "yearly_totals": [
@@ -1460,7 +1460,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 974954.0
+          "amount": 1005954.0
         }
       ]
     },
@@ -2114,7 +2114,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 12384602.0
+          "amount": 12500155.0
         }
       ]
     },
@@ -2701,7 +2701,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 4108203.0
+          "amount": 4128203.0
         }
       ]
     },
@@ -2757,6 +2757,10 @@
           "amount": 131000.0
         },
         {
+          "name": "Green, Gregory",
+          "amount": 99985.0
+        },
+        {
           "name": "The Pharmacy Guild of Australia",
           "amount": 75900.0
         },
@@ -2782,10 +2786,6 @@
         },
         {
           "name": "Fenwick, Simon",
-          "amount": 30000.0
-        },
-        {
-          "name": "Vicars, Will",
           "amount": 30000.0
         }
       ],
@@ -2860,7 +2860,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1295743.0
+          "amount": 1395728.0
         }
       ]
     },
