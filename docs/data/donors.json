@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T06:01:38.180989Z",
+  "generated_at": "2026-05-04T06:19:45.181236Z",
   "financial_year": "2024-25",
   "source": "AEC Transparency Register (Annual Data Download)",
   "parties": [
@@ -1123,7 +1123,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 575162.0
+          "amount": 577162.0
         }
       ]
     },
@@ -1483,6 +1483,10 @@
       "party": "Country Liberal Party (NT)",
       "top_donors": [
         {
+          "name": "JP Thor Ventures P/L",
+          "amount": 100000.0
+        },
+        {
           "name": "Tamboran Services PTY LTD",
           "amount": 92000.0
         },
@@ -1517,10 +1521,6 @@
         {
           "name": "INPEX Operations Australia Pty Ltd",
           "amount": 10000.0
-        },
-        {
-          "name": "Santos Limited",
-          "amount": 5000.0
         }
       ],
       "yearly_totals": [
@@ -1550,7 +1550,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 304200.0
+          "amount": 404200.0
         }
       ]
     },
@@ -1892,7 +1892,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 2692926.0
+          "amount": 2703926.0
         }
       ]
     },
@@ -2114,7 +2114,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 12600155.0
+          "amount": 12630155.0
         }
       ]
     },
@@ -2360,7 +2360,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1649144.0
+          "amount": 1673144.0
         }
       ]
     },
@@ -2701,7 +2701,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 4128203.0
+          "amount": 4138203.0
         }
       ]
     },
@@ -2773,6 +2773,10 @@
           "amount": 72000.0
         },
         {
+          "name": "Sporting Shooters Association of Australia (WA) Inc",
+          "amount": 69105.0
+        },
+        {
           "name": "Australian Hotels Association - Federal Office",
           "amount": 47610.0
         },
@@ -2782,10 +2786,6 @@
         },
         {
           "name": "Australian Trucking Association Ltd",
-          "amount": 30000.0
-        },
-        {
-          "name": "Fenwick, Simon",
           "amount": 30000.0
         }
       ],
@@ -2860,7 +2860,7 @@
         },
         {
           "year": "2024-25",
-          "amount": 1395728.0
+          "amount": 1464833.0
         }
       ]
     },
