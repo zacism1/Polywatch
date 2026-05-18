@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T06:48:28.466765Z",
+  "generated_at": "2026-05-18T07:06:37.298357Z",
   "financial_year": "2024-25",
   "source": "AEC Transparency Register (Annual Data Download)",
   "parties": [
@@ -361,16 +361,12 @@
         {
           "name": "Hill, Stephen",
           "amount": 49850.0
-        },
-        {
-          "name": "Gunter, Michael",
-          "amount": 31626.0
         }
       ],
       "yearly_totals": [
         {
           "year": "2024-25",
-          "amount": 81476.0
+          "amount": 49850.0
         }
       ]
     },
